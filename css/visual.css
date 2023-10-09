@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+visual .first_pic > img {
+  width: 100%;
+  display: inline-block;
+  position: absolute;
+}
+
+visual .shadow_pic > img {
+  display: inline-block;
+  position: absolute;
+  left: 16px;
+  z-index: 111;
+}
+
+visual > div .search-screen {
+  width: 400px;
+  border-radius: 50%;
+  background-color: #ffff;
+  position: relative;
+}
+
+.pics {
+  display: flex;
+}

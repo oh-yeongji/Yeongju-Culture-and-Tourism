@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,7 +7,10 @@
     <script src="js/prefixfree.min.js"></script>
     <script src="js/respond.min.js"></script>
     <link rel="stylesheet" href="/css/style.css" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <title>영주시 문화관광</title>
   </head>
   <body>
     <div class="wrap">
@@ -41,28 +44,38 @@
                 </ul>
            </nav>
   
-       <div class="side-header">
-        <a href="#"><strong>영주시청</strong> 바로가기 </a>
-        <div class="search">
+       <ul class="side-header">
+       <li>
+        
+        <a href="#" class="short-cut"><strong>영주시청</strong> 바로가기 </a>
+      </li>
+        <li class="search">
           <img src="./images/header/header_d.png" alt="검색">
-        </div>
-        <div class="side-menu">
+        </li>
+        <li class="side-menu">
           <img src="./images/header/header_h.png" alt="햄버거메뉴">
-        </div>
-       </div>
+        </li>
+       </ul>
      
     </header>
 
         <visual>
-          <div>
+          <div class="pics">
             <div class="first_pic">
-           
+              <img src="./images/visual/visual_first_bg.jpg" alt="사진">
           </div>
+          <div class="second_pic">
+            <img src="./images/visual/visual_second_bg.jpg" alt="사진">
+        </div>
+        <div class="third_pic">
+          <img src="./images/visual/visual_third_bg.jpg" alt="사진">
+      </div>
+    </div>
           <div class="shadow_pic">  
-          <img src="/images/visual/visu/al_bg.png" alt="그림자">
+          <img src="/images/visual/visual_bg.png" alt="그림자">
         </div>
         <div class="search-screen"></div>
-          </div>
+         
         </visual>
         <hotspot></hotspot>
         <community></community>

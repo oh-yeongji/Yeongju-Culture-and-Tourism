@@ -2,19 +2,18 @@
 
 header {
   position: relative;
-  padding: 0 40px 0 0;
+  /* padding: 0 40px 0 0; */
   width: 100%;
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: yellowgreen;
 }
 
 .logo {
   background-color: #1b52a2;
   width: auto;
-  padding: 30px 30px;
+  padding: 80px 30px 30px;
   border-radius: 0 0 20px 0;
   position: relative;
   z-index: 9;
@@ -24,37 +23,49 @@ header {
   display: flex;
   position: relative;
   justify-content: space-around;
-  min-width: 1060px;
+  /* min-width: 740px; */
 }
-/* .mainMunu > li:nth-child(-n + 6) {
-  margin-right: -50px;
-} */
+.mainMenu > li:nth-child(-n + 5) {
+  margin-right: 60px;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "Pretendard-Regular";
+}
+
 .mainMenu > li > a {
   color: #000;
 }
 
 .side-header {
   position: relative;
-  display: flex;  
+  display: flex;
   justify-content: space-around;
-  min-width: 306px;
+  /* min-width: 306px; */
+}
+.side-header > li:nth-child(-n + 3) {
+  margin-right: 30px;
 }
 
-/* visual .first_pic {
-  width: 100%;
+.short-cut::before {
   display: inline-block;
-  position: absolute;
-  z-index: 98999;
-  background: url("/images/visual/visual_first_bg.jpg");
-}
-visual .shadow_pic {
-  display: inline-block;
+  content: "";
   position: relative;
-  left: 50%;
-}
-visual > div .search-screen {
-  width: 400px;
+  top: 8px;
+  left: -7px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
-  background-color: #ffff;
+  background-color: #009dd0;
+}
+
+.short-cut {
   position: relative;
-} */
+  top: -7px;
+}
+.right-arrow {
+  font-size: 5px;
+  color: red;
+  position: absolute;
+}
+
+

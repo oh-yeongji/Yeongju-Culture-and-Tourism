@@ -23,10 +23,10 @@ img {
 
 html {
   font-size: 16px;
+  font-family: "Nanum Gothic", sans-serif, "Pretendard-Regular";
 }
 
 body {
   min-width: 515px;
   /* max-width: 1490px; */
 }
-
