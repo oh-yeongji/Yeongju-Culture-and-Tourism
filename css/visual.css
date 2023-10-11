@@ -1,7 +1,15 @@
 @charset "utf-8";
+visual {
+  width: 100%;
+  height: 935px;
+}
+
+.pics {
+  display: flex;
+}
 
 visual .first_pic > img {
-  width: 100%;
+  width: 1518px;
   display: inline-block;
   position: absolute;
 }
@@ -13,13 +21,37 @@ visual .shadow_pic > img {
   z-index: 111;
 }
 
+.first-text {
+  position: absolute;
+  top: 50%;
+  left: 32%;
+  font-size: 60px;
+  color: #fff;
+}
+.first-strong {
+  font-size: 75px;
+}
+
+.second-strong {
+  font-size: 75px;
+}
+
+.third-strong {
+  font-size: 75px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.second-text {
+  position: absolute;
+  font-size: 25px;
+}
+
 visual > div .search-screen {
   width: 400px;
   border-radius: 50%;
   background-color: #ffff;
   position: relative;
-}
-
-.pics {
-  display: flex;
 }
