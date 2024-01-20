@@ -45,28 +45,20 @@ header {
 .side-header > li:nth-child(-n + 3) {
   margin-right: 30px;
 }
-.short-cut::before {
+.gg {
   content: "\f054";
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
   margin-right: 10px;
-}
-
- .short-cut::before {
   display: inline-block;
-  content: "";
-  position: relative;
+  /* position: relative; */
   top: 8px;
   left: -7px;
   width: 25px;
   height: 25px;
   border-radius: 50%;
   background-color: #009dd0;
-  content: "\f054";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 400;
-  margin-right: 10px;
-} 
+}
 
 .short-cut {
   position: relative;
