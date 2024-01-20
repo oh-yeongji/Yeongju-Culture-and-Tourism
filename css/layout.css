@@ -16,6 +16,7 @@ a {
 
   text-align: center;
 }
+
 img {
   vertical-align: middle;
   border: 0;
@@ -23,7 +24,9 @@ img {
 
 html {
   font-size: 16px;
-  font-family: "Nanum Gothic", sans-serif, "Pretendard-Regular";
+  font-family: "Pretendard-Regular", "Nanum Gothic", sans-serif,
+    "MICEGothic Bold";
+  /* line-height: 32px; */
 }
 
 body {
