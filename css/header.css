@@ -12,10 +12,10 @@ header {
 .logo {
   background-color: #1b52a2;
   width: auto;
-  padding: 80px 30px 30px;
+  padding: 101px 30px 30px;
   border-radius: 0 0 20px 0;
   position: relative;
-  z-index: 9;
+  z-index: 99;
 }
 
 .mainMenu {
@@ -29,6 +29,12 @@ header {
 .mainMenu > li:hover .subMenu {
   display: block;
   /* visibility: visible; */
+  /* transition-duration: 3.5s; */
+  /* transition-delay: 3s; */
+  /* transition-timing-function: linear; */
+  height: 350px;
+  /* animation-name: slideDown, fadeOut; */
+  /* animation-duration: 3s; */
 }
 
 .mainMenu > li > a {
@@ -69,17 +75,20 @@ strong {
 }
 
 .subMenu {
+  left: -160px;
   width: 100%;
-  height: 350px;
-  background-color: aquamarine;
-  /* display: none; */
+  height: 0;
+  background-color: #fff;
+  display: none;
   /* visibility: hidden; */
-  position: absolute;
-  transition: visibility 0s, opacity 0.5s;
-  top: 62px;
-  z-index: 9999;
-  padding: 30px 0;
+  position: fixed;
+  top: 100px;
+  z-index: 9;
+  /* padding: 30px 0; */
   margin: 0 160px;
+  /* transition: height 0.5s ease; */
+  opacity: 0;
+  animation: fadeInUp 0.3s ease forwards;
 }
 
 .subInner {
@@ -89,6 +98,7 @@ strong {
 .leftSub {
   display: flex;
   flex-direction: column;
+  margin-left: 177px;
 }
 h2 {
   font-size: 40px;
@@ -96,9 +106,41 @@ h2 {
 .info {
   margin-top: 10px;
 }
+.leftPic {
+  width: 300px;
+  height: 300px;
+}
 .imgBg {
   position: absolute;
 }
 .imgCar {
   position: absolute;
+}
+/* .rightSub {
+  display: flex;
+  flex-direction: column;
+} */
+.first {
+  display: flex;
+}
+.first > li {
+  margin-right: 20px;
+  /* width: 25px; */
+  /* height: 3px; */
+  /* border: 1px solid #ccc; */
+  /* border-radius: 5px 5px 5px 5px; */
+}
+.recommendation {
+  display: flex;
+  flex-direction: column;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
