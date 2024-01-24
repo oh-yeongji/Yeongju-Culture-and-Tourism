@@ -7,6 +7,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 1000;
 }
 
 .logo {
@@ -15,7 +16,7 @@ header {
   padding: 101px 30px 30px;
   border-radius: 0 0 20px 0;
   position: relative;
-  z-index: 99;
+  z-index: 9999;
 }
 
 .mainMenu {
@@ -26,6 +27,7 @@ header {
 .mainMenu > li:nth-child(-n + 5) {
   margin-right: 60px;
 }
+
 .mainMenu > li:hover .subMenu {
   display: block;
   /* visibility: visible; */
@@ -80,14 +82,12 @@ strong {
   height: 0;
   background-color: #fff;
   display: none;
-  /* visibility: hidden; */
   position: fixed;
   top: 100px;
-  z-index: 9;
-  /* padding: 30px 0; */
+  z-index: 999;
+  padding: 30px 0;
   margin: 0 160px;
-  /* transition: height 0.5s ease; */
-  opacity: 0;
+  transition: opacity 0.3s ease, height 0.5s ease; 
   animation: fadeInUp 0.3s ease forwards;
 }
 
