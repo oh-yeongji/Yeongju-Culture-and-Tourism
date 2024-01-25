@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
   var headerHeight = header.offsetHeight;
   var submenu = document.querySelector(".subMenu");
 
+
+  
   window.addEventListener("scroll", function () {
     var scrollPosition = window.scrollY;
 
