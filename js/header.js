@@ -2,9 +2,15 @@ document.addEventListener("DOMContentLoaded", function () {
   var header = document.querySelector("header");
   var headerHeight = header.offsetHeight;
   var submenu = document.querySelector(".subMenu");
+  var searchDown = document.getElementById("searchDown");
 
 
-  
+  window.addEventListener("click",function (e) {
+    if(!e.target.matches("#searchDown")) {
+      
+    }
+  })
+
   window.addEventListener("scroll", function () {
     var scrollPosition = window.scrollY;
 
