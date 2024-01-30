@@ -1,7 +1,9 @@
 @charset "utf-8";
+
 visual {
   width: 100%;
   height: 935px;
+  background-color: aquamarine;
 }
 
 .pics {
