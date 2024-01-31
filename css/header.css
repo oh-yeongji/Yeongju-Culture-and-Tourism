@@ -184,6 +184,9 @@ h2 {
   }
 }
 #searchDown {
+  animation: fadeInUp 0.3s ease forwards;
+
+  display: none;
   z-index: 9;
   position: absolute;
   width: 100%;
@@ -257,6 +260,8 @@ input[type="text"] {
 }
 
 .closeBtn {
+  animation: fadeInUp 0.3s ease forwards;
+  display: none;
   z-index: 9;
   position: absolute;
   height: 56px;

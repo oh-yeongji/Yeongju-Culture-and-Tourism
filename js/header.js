@@ -2,14 +2,27 @@ document.addEventListener("DOMContentLoaded", function () {
   var header = document.querySelector("header");
   var headerHeight = header.offsetHeight;
   var submenu = document.querySelector(".subMenu");
+  var searchButton = document.querySelector(".search");
   var searchDown = document.getElementById("searchDown");
+  var closeBtn = document.querySelector(".closeBtn");
 
+  searchButton.addEventListener("click", function () {
+    searchDown.style.display =
+      searchDown.style.display === "none" || searchDown.style.display === ""
+        ? "block"
+        : "none";
 
-  window.addEventListener("click",function (e) {
-    if(!e.target.matches("#searchDown")) {
-      
-    }
-  })
+    closeBtn.style.display =
+      closeBtn.style.display === "none" || closeBtn.style.display === ""
+        ? "block"
+        : "none";
+  });
+
+  closeBtn.addEventListener("click", function () {
+    searchDown.style.display = "none";
+    searchDown.style.animation = "fadeInUp 0.3s ease backwards";
+    closeBtn.style.display = "none";
+  });
 
   window.addEventListener("scroll", function () {
     var scrollPosition = window.scrollY;
