@@ -19,8 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   closeBtn.addEventListener("click", function () {
-    searchDown.style.display = "none";
-    searchDown.style.animation = "fadeInUp 0.3s ease backwards";
+    searchDown.style.transition = "opacity 0.5s ease-in-out";
+    searchDown.style.height = "0";
+    searchDown.style.opacity = "0";
     closeBtn.style.display = "none";
   });
 
