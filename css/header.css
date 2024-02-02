@@ -84,12 +84,11 @@ strong {
   height: 350px;
   /* background-color: #fff; */
   background-color: aliceblue;
-  display: none;
+  /* display: none; */
   position: fixed;
   top: 100px;
   z-index: 999;
   padding: 30px 0;
-
   border-top: 1px solid #dee0e3;
 }
 
@@ -99,8 +98,9 @@ strong {
   opacity: 1;
   animation: fadeInUp 0.3s ease forwards;
 } */
+
 .subInner {
-  margin: 0 auto;
+  margin-left: 180px;
 }
 
 .leftSub {
@@ -111,6 +111,7 @@ strong {
   margin-left: 145px;
   border-right: 2px dotted #ccc; */
 }
+
 /* .leftSub::after {
   position: absolute;
   width: 1px;
@@ -135,17 +136,24 @@ h2 {
   top: 185px;
   left: 224px;
 }
+/* .rightSub::before {
+  position: relative;
+  width: 1px;
+  height: 100%;
+  border: 1px dashed #ccc;
+} */
 .rightSub {
-  float: right;
+  display: flex;
+  flex-direction: column;
   width: 70%;
   /* width: calc(100% - 477px); */
 }
+
 .first {
-  /* display: flex; */
+  display: flex;
 }
 
 .first > li {
-  float: left;
 }
 .first .capital {
   /* display: block; */
@@ -153,7 +161,7 @@ h2 {
 }
 
 .first .capital > a {
-  /* width: 100%;
+  /* /* width: 100%;
   height: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -172,7 +180,8 @@ h2 {
   display: flex;
   flex-direction: column;
 } */
-
+.second {
+}
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -185,8 +194,15 @@ h2 {
 }
 #searchDown {
   animation: fadeInUp 0.3s ease forwards;
-
   display: none;
+  z-index: 9;
+  position: absolute;
+  width: 100%;
+  padding: 20px 0 50px;
+  background-color: #fff;
+}
+.searchMenu {
+  animation: fadeInOut 0.3s ease forwards;
   z-index: 9;
   position: absolute;
   width: 100%;
@@ -271,6 +287,16 @@ input[type="text"] {
   top: 278px;
   text-align: center;
   background-color: #fff;
+}
+@keyframes fadeInOut {
+  from {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(0);
+  }
 }
 .closeBtn > i {
   position: relative;
