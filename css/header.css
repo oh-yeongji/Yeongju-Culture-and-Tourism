@@ -105,7 +105,7 @@ strong {
 
 .leftSub {
   float: left;
-  width: 30%;
+  width: 20%;
   /* display: flex;
   flex-direction: column;
   margin-left: 145px;
@@ -143,8 +143,8 @@ h2 {
   border: 1px dashed #ccc;
 } */
 .rightSub {
-  float: right;
-  width: 70%;
+  float: left;
+  width: 80%;
 }
 
 .first {
@@ -153,7 +153,8 @@ h2 {
 
 .first > ul {
   float: left;
-  width: 25%;
+  width: 20%;
+  margin-right: 27px;
 }
 
 .first .capital > a {
