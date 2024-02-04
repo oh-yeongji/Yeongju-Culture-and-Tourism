@@ -143,36 +143,29 @@ h2 {
   border: 1px dashed #ccc;
 } */
 .rightSub {
-  display: flex;
-  flex-direction: column;
+  float: right;
   width: 70%;
-  /* width: calc(100% - 477px); */
 }
 
 .first {
-  display: flex;
+  /* display: flex; */
 }
 
 .first > li {
 }
 .first .capital {
-  margin-right: 148px;
-  display: flex;
-  flex-grow: 1; /* 추가된 부분 */
-  flex-basis: 0; /* 추가된 부분 */
-  /* display: block; */
-  /* width: 22.75%; */
+  float: left;
 }
 
 .first .capital > a {
   width: 100%;
-  height: 5px;
+  /* height: 5px; */
   border: 1px solid #ccc;
   border-radius: 5px;
   font-weight: 600;
   color: #000;
   display: block;
-  padding: 10px 0;
+  /* padding: 10px 0; */
 }
 .first .capital > a:hover {
   /* background-color: #1b52a2;
