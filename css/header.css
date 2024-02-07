@@ -151,6 +151,7 @@ h2 {
   float: left;
   width: 18%;
   margin-right: 27px;
+  position: relative;
 }
 
 .first .capital {
@@ -170,14 +171,22 @@ h2 {
   background-color: #1b52a2;
   color: #fff;
 }
-
-.first .capital > a::after {
+.first ul > li {
+  position: relative;
+}
+.first ul > ul {
+  position: relative;
+}
+.first ul > ul a::after {
   content: "";
   position: absolute;
-  width: 2px;
-  height: 2px;
+  width: 5px;
+  height: 5px;
+  left: -7px;
+  top: 7px;
   background-color: #000;
 }
+
 /* .recommendation {
   display: flex;
   flex-direction: column;
