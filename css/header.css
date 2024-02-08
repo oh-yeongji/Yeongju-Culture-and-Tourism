@@ -10,8 +10,7 @@ header {
   z-index: 1000;
 }
 
-.mainMenu > li:hover .subMenu,
-.subMenu:hover {
+.mainMenu > li:hover .subMenu {
   display: block;
   height: 350px;
   opacity: 1;
@@ -74,7 +73,7 @@ strong {
 
 .subMenu {
   position: absolute;
-  height: 358px;
+  height: 378px;
   left: 0;
   top: 100px;
   padding: 30px 0;
@@ -98,18 +97,7 @@ strong {
 .leftSub {
   float: left;
   width: 20%;
-  /* display: flex;
-  flex-direction: column;
-  margin-left: 145px;
-  border-right: 2px dotted #ccc; */
-}
-
-.leftSub::after {
-  position: relative;
-  left: 0;
-  width: 1px;
-  height: 100%;
-  border: 1px dashed #dee0e3;
+  border-right: 1px dashed #ccc;
 }
 
 /* .leftSub::after {
@@ -128,13 +116,10 @@ h2 {
 .leftPic {
   width: 300px;
 }
-.imgBg {
-  /* position: absolute; */
-}
 .imgCar {
   position: absolute;
-  top: 185px;
-  left: 224px;
+  top: 206px;
+  left: 235px;
 }
 /* .rightSub::before {
   position: relative;
@@ -143,6 +128,8 @@ h2 {
   border: 1px dashed #ccc;
 } */
 .rightSub {
+  position: relative;
+  left: 63px;
   float: left;
   width: 80%;
 }
@@ -161,7 +148,7 @@ h2 {
 .first .capital > a {
   width: 100%;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 7px;
   font-weight: 600;
   color: #000;
   display: block;
@@ -176,29 +163,37 @@ h2 {
 }
 .first ul > ul {
   position: relative;
+  margin-left: 33px;
+}
+
+.first ul > ul a {
+  color: #777;
+}
+.first ul > ul > li > a:hover {
+  border-bottom: 1px dashed #1b52a2;
+  color: #1b52a2;
 }
 .first ul > ul a::after {
   content: "";
   position: absolute;
   width: 5px;
   height: 5px;
-  left: -7px;
+  left: -17px;
   top: 7px;
-  background-color: #000;
+  background-color: #777;
 }
-
-/* .recommendation {
-  display: flex;
-  flex-direction: column;
-} */
+.first ul > ul > li > a:hover::after {
+  background-color: #1b52a2;
+}
 .second {
-  margin-top: 147px;
+  margin-top: 30px;
   width: 18%;
+  clear: both;
 }
 .second .capital > a {
   width: 100%;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 7px;
   font-weight: 600;
   color: #000;
   display: inline-block;
@@ -221,9 +216,10 @@ h2 {
   }
 }
 
-.searchMenu {
+#searchDown {
+  display: block;
   animation: fadeInOut 0.3s ease forwards;
-  z-index: 9;
+  z-index: 9999;
   position: absolute;
   width: 100%;
   padding: 20px 0 50px;
