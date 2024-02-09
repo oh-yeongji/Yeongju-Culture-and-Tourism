@@ -190,6 +190,11 @@ h2 {
   width: 18%;
   clear: both;
 }
+
+.second .capital {
+  margin-bottom: 17px;
+}
+
 .second .capital > a {
   width: 100%;
   border: 1px solid #ccc;
@@ -199,12 +204,29 @@ h2 {
   display: inline-block;
   padding: 10px 0;
 }
-
+.second ul {
+  margin-left: 33px;
+}
+.second ul > li a {
+  color: #777;
+}
+.second ul > li > a::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 4px;
+  /* top: 7px; */
+  background-color: #777;
+}
 .second .capital > a:hover {
   background-color: #1b52a2;
   color: #fff;
 }
-
+.second ul > li a:hover {
+  border-bottom: 1px dashed #1b52a2;
+  color: #1b52a2;
+}
 @keyframes fadeInUp {
   from {
     opacity: 0;
