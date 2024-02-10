@@ -121,12 +121,6 @@ h2 {
   top: 206px;
   left: 235px;
 }
-/* .rightSub::before {
-  position: relative;
-  width: 1px;
-  height: 100%;
-  border: 1px dashed #ccc;
-} */
 .rightSub {
   position: relative;
   left: 63px;
@@ -168,6 +162,7 @@ h2 {
 
 .first ul > ul a {
   color: #777;
+  white-space: nowrap;
 }
 .first ul > ul > li > a:hover {
   border-bottom: 1px dashed #1b52a2;
@@ -176,17 +171,18 @@ h2 {
 .first ul > ul a::after {
   content: "";
   position: absolute;
-  width: 5px;
-  height: 5px;
+  width: 4px;
+  height: 4px;
   left: -17px;
-  top: 7px;
+  top: 10px;
   background-color: #777;
 }
 .first ul > ul > li > a:hover::after {
   background-color: #1b52a2;
 }
-.second {
-  margin-top: 30px;
+
+.first > ul:nth-last-child(1) {
+  margin-top: 22px;
   width: 18%;
   clear: both;
 }
@@ -205,6 +201,7 @@ h2 {
   padding: 10px 0;
 }
 .second ul {
+  /* position: relative; */
   margin-left: 33px;
 }
 .second ul > li a {
@@ -237,11 +234,10 @@ h2 {
     transform: translateY(0);
   }
 }
-
 #searchDown {
-  display: block;
-  animation: fadeInOut 0.3s ease forwards;
-  z-index: 9999;
+  display: none;
+  /* animation: fadeInOut 0.3s ease forwards; */
+  z-index: 9;
   position: absolute;
   width: 100%;
   padding: 20px 0 50px;
@@ -314,7 +310,7 @@ input[type="text"] {
 }
 
 .closeBtn {
-  animation: fadeInUp 0.3s ease forwards;
+  /* animation: fadeInUp 0.3s ease forwards; */
   display: none;
   z-index: 9;
   position: absolute;
