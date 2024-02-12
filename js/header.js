@@ -1,17 +1,24 @@
 document.addEventListener("DOMContentLoaded", function () {
   var header = document.querySelector("header");
   var headerHeight = header.offsetHeight;
-  const menuItem = document.querySelector(".mainMenu > li");
-  const subMenu = document.querySelector(".subMenu");
-  // var submenu = document.querySelector(".subMenu");
+  const mainMenuItems = document.querySelectorAll(".mainMenu > li");
+  const subMenus = document.querySelectorAll(".subMenu");
   var searchButton = document.querySelector(".search");
-  // var searchDown = document.querySelector(".searchMenu");
   var searchDown = document.getElementById("searchDown");
   var closeBtn = document.querySelector(".closeBtn");
 
-  menuItem.addEventListener("mouseover", function () {
-    subMenu.style.height = "378px";
-    subMenu.style.display = "block";
+  mainMenuItems.forEach((menuItem, index) => {
+    menuItem.addEventListener("mouseover", function () {
+      subMenus.forEach((submenu, subIndex) => {
+        if (subIndex === index) {
+          submenu.style.height = "378px";
+          submenu.style.display = "block";
+        } else {
+          submenu.style.height = "0";
+          submenu.style.display = "none";
+        }
+      });
+    });
   });
 
   searchButton.addEventListener("click", function () {

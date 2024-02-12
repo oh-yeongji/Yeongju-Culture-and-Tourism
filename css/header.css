@@ -134,6 +134,7 @@ h2 {
   color: #000;
   display: block;
   padding: 10px 0;
+  white-space: nowrap;
 }
 .first .capital > a:hover {
   background-color: #1b52a2;
@@ -142,6 +143,7 @@ h2 {
 .first ul > li {
   position: relative;
 }
+
 .first ul > ul {
   position: relative;
   margin-left: 33px;
@@ -155,6 +157,7 @@ h2 {
   border-bottom: 1px dashed #1b52a2;
   color: #1b52a2;
 }
+
 .first ul > ul a::after {
   content: "";
   position: absolute;
@@ -168,49 +171,12 @@ h2 {
   background-color: #1b52a2;
 }
 
-.first > ul:nth-last-child(1) {
-  margin-top: 22px;
+.first > ul:nth-of-type(4n + 1) {
+  /* margin-top: 22px; */
   width: 18%;
   clear: both;
 }
 
-.second .capital {
-  margin-bottom: 17px;
-}
-
-.second .capital > a {
-  width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 7px;
-  font-weight: 600;
-  color: #000;
-  display: inline-block;
-  padding: 10px 0;
-}
-.second ul {
-  /* position: relative; */
-  margin-left: 33px;
-}
-.second ul > li a {
-  color: #777;
-}
-.second ul > li > a::after {
-  content: "";
-  position: absolute;
-  width: 5px;
-  height: 5px;
-  left: 4px;
-  /* top: 7px; */
-  background-color: #777;
-}
-.second .capital > a:hover {
-  background-color: #1b52a2;
-  color: #fff;
-}
-.second ul > li a:hover {
-  border-bottom: 1px dashed #1b52a2;
-  color: #1b52a2;
-}
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -324,4 +290,3 @@ input[type="text"] {
   position: relative;
   top: 20px;
 }
-
