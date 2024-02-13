@@ -123,7 +123,7 @@ h2 {
 }
 
 .first .capital {
-  margin-bottom: 17px;
+  margin-bottom: 12px;
 }
 
 .first .capital > a {
@@ -136,12 +136,21 @@ h2 {
   padding: 10px 0;
   white-space: nowrap;
 }
+
+.first .capital i {
+  margin-left: 2.5px;
+}
+
 .first .capital > a:hover {
   background-color: #1b52a2;
   color: #fff;
 }
 .first ul > li {
   position: relative;
+}
+
+.first ul > ul > li  i {
+  margin-left: 2.5px;
 }
 
 .first ul > ul {
@@ -172,9 +181,12 @@ h2 {
 }
 
 .first > ul:nth-of-type(4n + 1) {
-  /* margin-top: 22px; */
   width: 18%;
   clear: both;
+}
+
+.first ul:nth-of-type(n + 5) {
+  margin-top: 30px;
 }
 
 @keyframes fadeInUp {

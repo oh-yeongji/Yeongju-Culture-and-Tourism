@@ -1,11 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var header = document.querySelector("header");
-  var headerHeight = header.offsetHeight;
   const mainMenuItems = document.querySelectorAll(".mainMenu > li");
   const subMenus = document.querySelectorAll(".subMenu");
-  var searchButton = document.querySelector(".search");
-  var searchDown = document.getElementById("searchDown");
-  var closeBtn = document.querySelector(".closeBtn");
+  const searchButton = document.querySelector(".search");
+  const searchDown = document.getElementById("searchDown");
+  const closeBtn = document.querySelector(".closeBtn");
 
   mainMenuItems.forEach((menuItem, index) => {
     menuItem.addEventListener("mouseover", function () {
@@ -13,11 +11,24 @@ document.addEventListener("DOMContentLoaded", function () {
         if (subIndex === index) {
           submenu.style.height = "378px";
           submenu.style.display = "block";
+          const h2 = submenu.querySelector("h2");
+          if (h2 && h2.textContent.includes("여행정보")) {
+            submenu.style.height = "500px";
+          }
         } else {
           submenu.style.height = "0";
           submenu.style.display = "none";
         }
       });
+    });
+  });
+
+  // 각 서브메뉴 요소에 이벤트 리스너 추가
+  subMenus.forEach((submenu) => {
+    // 마우스가 서브메뉴 영역을 벗어났을 때
+    submenu.addEventListener("mouseleave", () => {
+      // 해당 서브메뉴를 숨김
+      submenu.style.display = "none";
     });
   });
 
