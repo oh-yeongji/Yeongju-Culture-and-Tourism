@@ -1,22 +1,22 @@
 @charset "utf-8";
 
 visual {
+  position: absolute;
   width: 100%;
   height: 935px;
-  background-color: aquamarine;
 }
 
-.pics {
-  display: flex;
-}
-
-visual .first_pic > img {
-  width: 1518px;
+visual .pics .first_pic {
+  background-image: url("/images/visual/visual_first_bg.jpg");
   display: inline-block;
   position: absolute;
+  z-index: 999;
+  left: 0;
+  top: 0;
 }
 
 visual .shadow_pic > img {
+  background: url("/images/visual/visual_bg.png") no-repeat center/cover;
   display: inline-block;
   position: absolute;
   left: 16px;
@@ -47,7 +47,7 @@ visual .shadow_pic > img {
 }
 
 .second-text {
-  position: absolute;
+  position: relative;
   font-size: 25px;
 }
 
