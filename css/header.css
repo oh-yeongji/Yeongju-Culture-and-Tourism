@@ -149,7 +149,7 @@ h2 {
   position: relative;
 }
 
-.first ul > ul > li  i {
+.first ul > ul > li i {
   margin-left: 2.5px;
 }
 
@@ -203,7 +203,7 @@ h2 {
 #searchDown {
   display: none;
   /* animation: fadeInOut 0.3s ease forwards; */
-  z-index: 9;
+  z-index: 999;
   position: absolute;
   width: 100%;
   padding: 20px 0 50px;
@@ -278,7 +278,7 @@ input[type="text"] {
 .closeBtn {
   /* animation: fadeInUp 0.3s ease forwards; */
   display: none;
-  z-index: 9;
+  z-index: 999;
   position: absolute;
   height: 56px;
   width: 56px;

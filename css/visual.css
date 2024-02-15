@@ -7,28 +7,38 @@ visual {
 }
 
 visual .pics .first_pic {
-  background-image: url("/images/visual/visual_first_bg.jpg");
+  background: url("../images/visual/visual_first_bg.jpg") no-repeat center/cover;
+  /* background-size: 5000px auto; */
   display: inline-block;
   position: absolute;
-  z-index: 999;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
   left: 0;
   top: 0;
 }
 
-visual .shadow_pic > img {
+visual .shadow_pic {
+  max-width: 1000px;
+  max-height: 760px;
   background: url("/images/visual/visual_bg.png") no-repeat center/cover;
   display: inline-block;
   position: absolute;
-  left: 16px;
-  z-index: 111;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  transform: translate(28%, 6%);
 }
 
 .first-text {
+  font-family: "MICEGothic", "Pretendard", "맑은 고딕", sans-serif;
   position: absolute;
-  top: 50%;
-  left: 32%;
+  top: 29%;
+  left: 37%;
+  line-height: 1;
   font-size: 60px;
   color: #fff;
+  z-index: 999;
 }
 .first-strong {
   font-size: 75px;
@@ -47,8 +57,13 @@ visual .shadow_pic > img {
 }
 
 .second-text {
-  position: relative;
+  font-family: "MICEGothic", "Pretendard", "맑은 고딕", sans-serif;
+  position: absolute;
   font-size: 25px;
+  z-index: 999;
+  top: 49%;
+  left: 35%;
+  color: #fff;
 }
 
 visual > div .search-screen {
