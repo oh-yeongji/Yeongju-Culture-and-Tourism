@@ -66,9 +66,21 @@ visual .shadow_pic {
   color: #fff;
 }
 
-visual > div .search-screen {
-  width: 400px;
-  border-radius: 50%;
+visual .search_screen > input {
+  width: 400px !important;
+  height: 60px;
   background-color: #ffff;
   position: relative;
+  z-index: 99;
+  top: 517px;
+  left: 563px;
+  border-radius: 30px;
+  padding: 0 35px;
+}
+
+visual .search_screen .y_search {
+  position: absolute;
+  background: url("../images/header/header_d.png") no-repeat center;
+  width: 100%;
+  z-index: 999;
 }
