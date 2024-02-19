@@ -30,60 +30,64 @@ visual .shadow_pic {
   transform: translate(28%, 6%);
 }
 
-.first-text {
+visual dl {
   font-family: "MICEGothic", "Pretendard", "맑은 고딕", sans-serif;
-  position: absolute;
-  top: 29%;
-  left: 37%;
-  line-height: 1;
-  font-size: 60px;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
   color: #fff;
+}
+
+visual dl .first-text {
+  position: absolute;
+  top: 32%;
+  left: 28%;
+  line-height: 1.1;
+  font-size: 60px;
+  text-align: center;
   z-index: 999;
 }
-.first-strong {
+
+visual dl dt strong {
   font-size: 75px;
 }
 
-.second-strong {
-  font-size: 75px;
-}
-
-.third-strong {
-  font-size: 75px;
-}
-
-.italic {
-  font-style: italic;
-}
-
-.second-text {
-  font-family: "MICEGothic", "Pretendard", "맑은 고딕", sans-serif;
+visual dl .second-text {
   position: absolute;
   font-size: 25px;
   z-index: 999;
-  top: 49%;
+  top: 52%;
   left: 35%;
-  color: #fff;
 }
 
-visual .search_screen > input {
-  width: 400px !important;
+visual .search_screen {
+}
+
+visual .search_screen input {
+  width: 400px;
   height: 60px;
   background-color: #ffff;
-  position: relative;
+  position: absolute;
   z-index: 99;
-  top: 517px;
+  /* float: left; */
+  top: 56%;
   left: 563px;
+  display: inline-block;
   border-radius: 30px;
   padding: 0 35px;
+  margin-top: 50px;
 }
 
 visual .search_screen .y_search {
   position: absolute;
   background: url("../images/header/header_d.png") no-repeat center;
-  width: 100%;
-  z-index: 999;
+  width: 60px;
+  height: 60px;
+  top: 56%;
+  left: 563px;
+  display: inline-block;
+  /* float: left; */
+  /* z-index: 999; */
 }
+
 .control {
   position: absolute;
   left: 0;
@@ -98,16 +102,35 @@ visual .search_screen .y_search {
   border-radius: 0 20px 0 0;
   padding: 10px 30px;
 }
-.control .prev {
+
+.control ._1 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 15%;
+  left: 10%;
+}
+
+.control ._1 .prev {
   background: url("../images/visual/visual_pre_stop_next.png") no-repeat 0 0/400%
     auto;
   position: absolute;
   width: 25px;
   height: 25px;
-  top: 31%;
-  left: 10%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
 }
-.control .stop {
+.control ._2 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 15%;
+  left: 21%;
+}
+
+.control ._2 .stop {
   background: url("../images/visual/visual_pre_stop_next.png") no-repeat 0 0/400%
     auto;
   background-position: 33.33% 0;
@@ -118,35 +141,55 @@ visual .search_screen .y_search {
   left: 24%;
   /* display: none; */
 }
-.control .play {
+
+.control ._2_1 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 15%;
+  left: 21%;
+}
+
+.control ._2_1 .play {
   background: url("../images/visual/visual_pre_stop_next.png") no-repeat 0 0/400%
     auto;
   background-position: 66.66% 0;
   position: absolute;
   width: 25px;
   height: 25px;
-  top: 31%;
-  left: 24%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: none;
 }
-.control .next {
+
+.control ._3 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 15%;
+  left: 34%;
+}
+
+.control ._3 .next {
   background: url("../images/visual/visual_pre_stop_next.png") no-repeat 0 0/400%
     auto;
   position: absolute;
   width: 25px;
   height: 25px;
-  transform: rotate(180deg);
-  top: 31%;
-  left: 38%;
+  /* transform: rotate(180deg); */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(180deg);
 }
-.cyberTour {
+.cyberTour::after {
+  content: "";
   position: absolute;
   z-index: 999;
-  right: 0;
-  bottom: 0;
-  width: 230px;
-  height: 250px;
-  object-fit: contain;
+  right: 4%;
+  bottom: -12%;
+  width: 200px;
+  height: 360px;
   background: url("../images/visual/visual_man.png") no-repeat;
 }
 
@@ -175,5 +218,51 @@ visual .search_screen .y_search {
   color: #fff;
   font-weight: 500;
   top: 91px;
-  left: 17px;
+  left: 39px;
+}
+.count {
+  float: right;
+}
+.count .nowPage {
+  position: absolute;
+  left: 50%;
+  top: 35%;
+}
+
+.count .progressBar {
+  width: 100px;
+  height: 5px;
+  top: 57%;
+  left: 57%;
+  position: absolute;
+  background: #d9d9d9;
+}
+
+.count .progressBar .bar {
+  position: absolute;
+  top: 57%;
+  left: 57%;
+  height: 100%;
+  width: 100%;
+}
+
+.count .progressBar .bar.on {
+  background: #1b51ab;
+  animation: prograss 3s linear;
+  animation-fill-mode: forwards;
+}
+
+.count .nextPage {
+  position: absolute;
+  top: 33%;
+  left: 89%;
+}
+
+@keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
