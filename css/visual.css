@@ -6,19 +6,52 @@ visual {
   height: 935px;
 }
 
-visual .pics .first_pic {
+visual .slideShow .slides > li {
+  float: left;
+}
+
+visual .slideShow .slides .first_pic {
   background: url("../images/visual/visual_first_bg.jpg") no-repeat center/cover;
   /* background-size: 5000px auto; */
   display: inline-block;
   position: absolute;
   z-index: 9;
+  transition: left 0.5s ease-out;
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
 }
 
-visual .shadow_pic {
+visual .slideShow .slides .second_pic {
+  background: url("../images/visual/visual_second_bg.jpg") no-repeat
+    center/cover;
+  /* background-size: 5000px auto; */
+  display: inline-block;
+  position: absolute;
+  z-index: 9;
+  transition: left 0.5s ease-out;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+visual .slideShow .slides .third_pic {
+  background: url("../images/visual/visual_third_bg.jpg") no-repeat center/cover;
+  /* background-size: 5000px auto; */
+  display: inline-block;
+  position: absolute;
+  z-index: 9;
+  transition: left 0.5s ease-out;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+visual .slides::after {
+  content: "";
   max-width: 1000px;
   max-height: 760px;
   background: url("/images/visual/visual_bg.png") no-repeat center/cover;
