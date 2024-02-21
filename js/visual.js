@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var stop = document.querySelector(".stop");
   var play = document.querySelector(".play");
 
+
   function nextSlide() {
     slides[currentSlide].classList.remove("active");
     currentSlide = (currentSlide + 1) % slides.length;
@@ -33,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // "stop" 버튼 클릭 시 슬라이드 쇼 일시 중지
   stop.addEventListener("click", function () {
     stop.style.backgroundPosition = "66.66% 0";
-    console.log("j9");
+    play.style.display = "block";
     clearInterval(slideInterval);
   });
 

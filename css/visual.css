@@ -262,7 +262,7 @@ visual .search_screen .y_search {
   top: 35%;
 }
 
-.count .progressBar {
+visual .count .progressBar {
   width: 100px;
   height: 5px;
   top: 57%;
@@ -271,17 +271,15 @@ visual .search_screen .y_search {
   background: #d9d9d9;
 }
 
-.count .progressBar .bar {
+visual .count .progressBar::after {
+  content: "";
   position: absolute;
-  top: 57%;
-  left: 57%;
-  height: 100%;
-  width: 100%;
-}
-
-.count .progressBar .bar.on {
+  top: 0;
+  left: 0;
+  width: 0px;
+  height: 5px;
   background: #1b51ab;
-  animation: prograss 3s linear;
+  animation: progress 6s ease;
   animation-fill-mode: forwards;
 }
 
