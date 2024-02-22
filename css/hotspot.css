@@ -8,16 +8,20 @@ hotspot {
   display: block;
   bottom: -866px;
   z-index: 999;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
 }
 
 hotspot .info {
+  position: absolute;
+  margin-top: 0;
   margin-left: 70px;
   width: 23%;
+  height: 100%;
+  /* background-color: blue; */
   display: inline-block;
 }
 
-/* hotspot .info::before {
+hotspot .info::before {
   content: "";
   background: url("../images/hotspot/hotspot_heart.png") no-repeat;
   width: 90px;
@@ -49,7 +53,7 @@ hotspot .info .hashTag strong {
 hotspot .info .place {
   position: absolute;
   top: 165px;
-  left: 81px;
+  left: 14px;
 }
 hotspot .info .place::before {
   content: "";
@@ -70,20 +74,20 @@ hotspot .info .history {
   text-overflow: ellipsis;
   -webkit-line-clamp: 4;
   overflow: hidden;
-} */
-
-/* hotspot .slides {
-  position: relative;
-  top: -83px;
+}
+*/ hotspot .slides {
+  position: absolute;
+  top: 0;
+  right: 0;
   float: right;
-  width: 1050px;
+  width: 77%;
   height: 339px;
-  background: #009dd0;
-} */
+  /* background: #009dd0; */
+}
 
-/* hotspot .slides .first_pic {
+hotspot .slides .first_pic {
   background: url("../images/hotspot/hotspot_first_pic") no-repeat;
   width: 100%;
   height: 339px;
   position: absolute;
-} */
+}
