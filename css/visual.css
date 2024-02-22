@@ -262,6 +262,10 @@ visual .search_screen .y_search {
   top: 35%;
 }
 
+.count .nowPage strong {
+  color: #1b51a1;
+}
+
 visual .count .progressBar {
   width: 100px;
   height: 5px;
@@ -278,9 +282,11 @@ visual .count .progressBar::after {
   left: 0;
   width: 0px;
   height: 5px;
-  background: #1b51ab;
+  background: #1b51a1;
   animation: progress 6s ease;
   animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
 }
 
 .count .nextPage {
