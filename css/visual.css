@@ -226,7 +226,7 @@ visual .search_screen .y_search {
   background: url("../images/visual/visual_man.png") no-repeat;
 }
 
-.speechBubble {
+visual .speechBubble {
   position: absolute;
   z-index: 99;
   right: 127px;
@@ -237,7 +237,7 @@ visual .search_screen .y_search {
   background: url("../images/visual/visual_speech_bubble.png");
 }
 
-.speechBubble .title {
+visual .speechBubble .title {
   position: absolute;
   font-size: 25px;
   font-weight: 700;
@@ -246,12 +246,12 @@ visual .search_screen .y_search {
   color: #fff;
 }
 
-.speechBubble .content {
+visual .speechBubble .content {
   position: absolute;
   color: #fff;
   font-weight: 500;
   top: 91px;
-  left: 39px;
+  left: 27px;
 }
 .count {
   float: right;

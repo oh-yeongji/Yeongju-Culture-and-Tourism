@@ -1,2 +1,40 @@
 @charset "utf-8";
 
+community {
+  position: absolute;
+  width: 100%;
+  display: block;
+  height: 544px;
+  padding: 70px 0;
+  background: #f3f6fa;
+  top: 217%;
+}
+
+community .festival {
+  background: #1b52a1;
+  margin: 0 59.2px;
+  width: 24%;
+  /* height: 100%; */
+  padding: 30px 40px;
+  color: #fff;
+}
+
+community .festival .titie > div {
+  color: #b3e7ff;
+  text-transform: uppercase;
+}
+
+community .festival .image {
+  margin: 15px auto;
+}
+
+community .festival .contents li {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+community .festival .contents li > a {
+  display: block;
+  /* padding: 6px 20px; */
+  border: 3px solid transparent;
+  color: #fff;
+}
