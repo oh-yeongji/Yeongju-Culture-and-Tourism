@@ -4,7 +4,7 @@ community {
   position: absolute;
   width: 100%;
   display: block;
-  height: 544px;
+  /* height: 544px; */
   padding: 70px 0;
   background: #f3f6fa;
   top: 217%;
@@ -14,22 +14,28 @@ community .festival {
   background: #1b52a1;
   margin: 0 59.2px;
   width: 24%;
+  height: 544px;
   padding: 30px 40px;
   color: #fff;
 }
 
-/* community .festival .titie > div {
+community .festival .titie > div {
+  display: inline-block;
   color: #b3e7ff;
   text-transform: uppercase;
-} */
+}
+community .festival .titie h2 {
+  position: absolute;
+  display: inline-block;
+  font-size: 25px;
+}
+community .festival .image {
+  margin: 15px 10px;
+}
 
-/* community .festival .image {
-  margin: 15px auto;
-} */
-
-/* community .festival .contents li {
+community .festival .contents li {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-} */
+}
 community .festival ul {
   list-style: none;
 }
