@@ -50,6 +50,36 @@ community .festival .contents li > a {
 
 community .apply .incentiveApply {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 66px;
+  left: 486px;
+}
+
+community .apply .incentiveApply > p {
+  display: block;
+  font-size: 27px;
+}
+
+community .apply .incentiveApply div {
+  width: 336px;
+  height: 60px;
+  border: 3px solid transparent;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+community .apply .incentiveApply > div > p {
+  position: relative;
+  left: 19px;
+  top: 25%;
+}
+
+community .apply .incentiveApply > div > i {
+  position: absolute;
+  float: right;
+}
+
+community .apply .incentiveApply > div:hover {
+  color: #1b52a1;
+  border-color: #1b52a1;
+  font-weight: 700;
 }
