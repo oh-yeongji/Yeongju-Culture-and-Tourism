@@ -168,5 +168,14 @@ hotspot .slides .first_pic::before {
   left: 50%;
   padding-top: 75px;
   z-index: 99;
-  /* margin-left: 58px; */
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hotspot .slides .second_pic {
+  float: right;
+  width: 475px;
+  height: 339px;
+  background: url("../images/hotspot/hotspot_first_pic");
 }
