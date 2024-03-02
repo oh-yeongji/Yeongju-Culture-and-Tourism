@@ -147,7 +147,7 @@ hotspot .slides .btns .right::before {
 }
 
 hotspot .slides .first_pic {
-  background: url("../images/hotspot/hotspot_first_pic") no-repeat;
+  background: url("../images/hotspot/hotspot_first_pic.jpg") no-repeat center;
   width: 475px;
   height: 339px;
   object-fit: cover;
@@ -171,11 +171,13 @@ hotspot .slides .first_pic::before {
   box-sizing: border-box;
   transform: translate(-50%, -50%);
   text-align: center;
+  color: #fff;
 }
 
 hotspot .slides .second_pic {
   float: right;
   width: 475px;
   height: 339px;
-  background: url("../images/hotspot/hotspot_first_pic");
+  background: url("../images/hotspot/hotspot_second_pic.jpg") no-repeat center;
+  object-fit: cover;
 }
