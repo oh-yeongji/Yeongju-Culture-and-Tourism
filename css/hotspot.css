@@ -191,3 +191,21 @@ hotspot .slides .second_pic a {
   bottom: 0;
   right: 32px;
 }
+
+hotspot .slides .second_pic a b {
+  position: absolute;
+  top: 37%;
+  left: 22px;
+  white-space: nowrap;
+}
+
+hotspot .slides .second_pic a:after {
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  content: "";
+  background: url("../images/hotspot/hotspot_side_next.png") no-repeat center;
+  width: 20px;
+  height: 20px;
+  z-index: 99;
+}
