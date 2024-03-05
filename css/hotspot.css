@@ -201,10 +201,11 @@ hotspot .slides .second_pic a b {
 
 hotspot .slides .second_pic a:after {
   position: absolute;
-  top: 50%;
-  right: 20%;
+  top: 42%;
+  right: 8%;
   content: "";
-  background: url("../images/hotspot/hotspot_side_next.png") no-repeat center;
+  background: url("../images/hotspot/hotspot_side_next.png") no-repeat 0 0/100%
+    auto;
   width: 20px;
   height: 20px;
   z-index: 99;
