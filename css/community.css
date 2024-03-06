@@ -59,6 +59,20 @@ community .apply .incentiveApply > p {
   font-size: 27px;
 }
 
+community .apply .incentiveApply > h2 {
+  font-size: 27px;
+}
+
+community .apply .incentiveApply > span {
+  position: absolute;
+  color: #636465;
+}
+
+community .apply .incentiveApply > img {
+  position: relative;
+  left: 112px;
+}
+
 community .apply .incentiveApply div {
   width: 336px;
   height: 60px;
