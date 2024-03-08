@@ -105,3 +105,8 @@ community .apply .incentiveApply > div:hover i {
   opacity: 1;
   display: block;
 }
+
+community .apply .fourApply .pomphlet {
+  width: 250px;
+  height: 250px;
+}
