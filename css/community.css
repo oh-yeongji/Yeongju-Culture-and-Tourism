@@ -128,3 +128,10 @@ community .apply .fourApply .pomphlet .short-cut {
   color: #fff;
   z-index: 99999999;
 }
+community .apply .fourApply .pomphlet > a {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  background: url("../images/community/community_cars_people.png") no-repeat 0 0/200%
+    auto;
+}
