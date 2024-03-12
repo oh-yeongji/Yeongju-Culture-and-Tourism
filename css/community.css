@@ -117,12 +117,18 @@ community .apply .fourApply .pomphlet > h2 {
   font-size: 23px;
 }
 
+community .apply .fourApply .pomphlet > p {
+  font-size: 15px;
+  color: #666;
+  margin: 10px 0 30px;
+}
+
 community .apply .fourApply .pomphlet .short-cut {
   width: 116px;
   height: 34px;
   position: relative;
   display: block;
-  padding: 5px 45px 5px 20px;
+  padding: 5px 32px 5px 20px;
   background: #cfd1d5;
   border-radius: 20px;
   color: #fff;
@@ -134,4 +140,18 @@ community .apply .fourApply .pomphlet > a {
   height: 140px;
   background: url("../images/community/community_cars_people.png") no-repeat 0 0/200%
     auto;
+  left: 131px;
+  top: 50%;
+}
+
+community .apply .fourApply .taxi {
+  position: absolute;
+  top: 87px;
+  right: 37px;
+  border-left: 1px solid #e2e5e8;
+}
+
+community .apply .fourApply .taxi > h2 {
+  font-size: 15px;
+  color: #666;
 }
