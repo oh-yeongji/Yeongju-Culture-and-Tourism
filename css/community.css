@@ -155,3 +155,11 @@ community .apply .fourApply .taxi > h2 {
   font-size: 15px;
   color: #666;
 }
+community .apply .fourApply .taxi > a {
+  background-position: 100% 0;
+  background: url("../images/community/community_cars_people.png") no-repeat 0 0/200%
+    auto;
+  position: absolute;
+  width: 120px;
+  height: 120px;
+}
