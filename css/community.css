@@ -156,7 +156,7 @@ community .apply .fourApply .taxi > h2 {
   color: #666;
 }
 community .apply .fourApply .taxi > a {
-  background-position: 100% 0;
+  background-position: 10% 0;
   background: url("../images/community/community_cars_people.png") no-repeat 0 0/200%
     auto;
   position: absolute;
