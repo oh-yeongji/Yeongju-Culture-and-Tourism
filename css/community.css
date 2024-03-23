@@ -112,7 +112,7 @@ community .apply .fourApply .pomphlet {
   left: 57%;
   width: 250px;
   height: 250px;
-  border-bottom: 1px #666;
+  border-bottom: 1px solid #e2e5e8;
 }
 
 community .apply .fourApply .pomphlet > h2 {
