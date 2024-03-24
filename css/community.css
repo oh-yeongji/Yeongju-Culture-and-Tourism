@@ -192,6 +192,7 @@ community .apply .fourApply .cityTour {
   height: 300px;
   top: 50%;
   right: 24%;
+  border-right: 1px solid #e2e5e8;
 }
 community .apply .fourApply .cityTour > h2 {
   font-size: 23px;
