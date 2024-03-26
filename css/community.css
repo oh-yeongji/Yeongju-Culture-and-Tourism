@@ -232,6 +232,7 @@ community .apply .fourApply .commentator {
   height: 300px;
   top: 50%;
   right: 4%;
+  border-top: 1px solid #e2e5e8;
 }
 
 community .apply .fourApply .commentator > h2 {
