@@ -52,6 +52,7 @@ community .apply .incentiveApply {
   position: absolute;
   top: 66px;
   left: 486px;
+  padding-top: 36px;
 }
 
 community .apply .incentiveApply > p {
@@ -61,16 +62,20 @@ community .apply .incentiveApply > p {
 
 community .apply .incentiveApply > h2 {
   font-size: 27px;
+  margin-top: -9px;
 }
 
 community .apply .incentiveApply > span {
   position: absolute;
   color: #636465;
+  margin-top: 9px;
 }
 
 community .apply .incentiveApply > img {
   position: relative;
   left: 112px;
+  margin-top: 15px;
+  margin-left: 18px;
 }
 
 community .apply .incentiveApply div {
@@ -118,12 +123,14 @@ community .apply .fourApply .pomphlet {
 
 community .apply .fourApply .pomphlet > h2 {
   font-size: 23px;
+  padding-top: 12px;
 }
 
 community .apply .fourApply .pomphlet > p {
-  font-size: 15px;
+  font-size: 13px;
   color: #666;
   margin: 10px 0 30px;
+  white-space: nowrap;
 }
 
 community .apply .fourApply .pomphlet .short-cut {
@@ -137,7 +144,20 @@ community .apply .fourApply .pomphlet .short-cut {
   color: #fff;
   z-index: 99999999;
 }
-community .apply .fourApply .pomphlet > a {
+
+community .apply .fourApply .pomphlet .short-cut::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 9px;
+  background: url("../images/community/community_next.png") no-repeat 0 100%/100%
+    auto;
+  width: 16px;
+  height: 12px;
+}
+
+community .apply .fourApply .pomphlet::after {
+  content: "";
   position: absolute;
   width: 140px;
   height: 140px;
