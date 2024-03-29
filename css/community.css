@@ -178,6 +178,8 @@ community .apply .fourApply .taxi > h2 {
   font-size: 23px;
   font-weight: 600;
   color: #444;
+  padding-top: 33px;
+  padding-left: 12px;
 }
 
 community .apply .fourApply .taxi > p {
@@ -198,8 +200,9 @@ community .apply .fourApply .taxi .short-cut {
   z-index: 99999999;
 }
 
-community .apply .fourApply .taxi > a {
+community .apply .fourApply .taxi::after {
   background-position: 100% 0;
+  content: "";
   background: url("../images/community/community_cars_people.png") no-repeat 0 0/200%
     auto;
   position: absolute;
