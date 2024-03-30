@@ -206,8 +206,8 @@ community .apply .fourApply .taxi::after {
   background: url("../images/community/community_cars_people.png") no-repeat 0 0/200%
     auto;
   position: absolute;
-  width: 140px;
-  height: 140px;
+  width: 100px;
+  height: 100px;
 }
 
 community .apply .fourApply .cityTour {
