@@ -46,7 +46,7 @@ community .festival .contents li > a {
   color: #fff;
 }
 
-community .festival .contents > li > a:nth-child(1) {
+community .festival .contents > li > p:nth-child(1) {
   border-color: #fff;
 }
 
