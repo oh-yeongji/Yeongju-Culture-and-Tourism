@@ -202,6 +202,16 @@ community .apply .fourApply .taxi .short-cut {
   z-index: 99999999;
 }
 
+community .apply .fourApply .taxi .short-cut::after {
+  content: "";
+  background: url("../images/community/community_next.png") no-repeat 0/100%
+    100% auto;
+  position: absolute;
+  width: 16px;
+  height: 12px;
+  top: 0;
+}
+
 community .apply .fourApply .taxi::after {
   background-position: 100% 0;
   content: "";
