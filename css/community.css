@@ -204,12 +204,13 @@ community .apply .fourApply .taxi .short-cut {
 
 community .apply .fourApply .taxi .short-cut::after {
   content: "";
-  background: url("../images/community/community_next.png") no-repeat 0/100%
-    100% auto;
   position: absolute;
+  top: 12px;
+  right: 9px;
+  background: url("../images/community/community_next.png") no-repeat 0 100%/100%
+    auto;
   width: 16px;
   height: 12px;
-  top: 0;
 }
 
 community .apply .fourApply .taxi::after {
@@ -252,6 +253,17 @@ community .apply .fourApply .cityTour .short-cut {
   z-index: 99999999;
 }
 
+community .apply .fourApply .cityTour .short-cut::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 9px;
+  background: url("../images/community/community_next.png") no-repeat 0 100%/100%
+    auto;
+  width: 16px;
+  height: 12px;
+}
+
 community .apply .fourApply .cityTour > a {
   background-position: 0 100%;
   background: url("../images/community/community_cars_people.png") no-repeat 0 0/200%
@@ -291,6 +303,17 @@ community .apply .fourApply .commentator .short-cut {
   border-radius: 20px;
   color: #fff;
   z-index: 99999999;
+}
+
+community .apply .fourApply .commentator .short-cut::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 9px;
+  background: url("../images/community/community_next.png") no-repeat 0 100%/100%
+    auto;
+  width: 16px;
+  height: 12px;
 }
 
 community .apply .fourApply .commentator > a {
