@@ -185,7 +185,7 @@ community .apply .fourApply .taxi > h2 {
 }
 
 community .apply .fourApply .taxi > p {
-  font-size: 15px;
+  font-size: 13px;
   color: #666;
   margin: 10px 0 30px;
 }
@@ -221,6 +221,7 @@ community .apply .fourApply .taxi::after {
   position: absolute;
   width: 100px;
   height: 100px;
+  right: 0;
 }
 
 community .apply .fourApply .cityTour {
@@ -233,10 +234,15 @@ community .apply .fourApply .cityTour {
 }
 community .apply .fourApply .cityTour > h2 {
   font-size: 23px;
+  position: absolute;
+  left: 35px;
 }
 
 community .apply .fourApply .cityTour > p {
-  font-size: 15px;
+  position: absolute;
+  top: 34px;
+  left: 35px;
+  font-size: 13px;
   color: #666;
   margin: 10px 0 30px;
 }
@@ -251,6 +257,8 @@ community .apply .fourApply .cityTour .short-cut {
   border-radius: 20px;
   color: #fff;
   z-index: 99999999;
+  top: 87px;
+  left: 33px;
 }
 
 community .apply .fourApply .cityTour .short-cut::after {
@@ -272,6 +280,7 @@ community .apply .fourApply .cityTour > a {
   height: 120px;
   position: absolute;
   top: 50%;
+  right: 0;
 }
 
 community .apply .fourApply .commentator {
