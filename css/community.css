@@ -172,8 +172,23 @@ community .apply .fourApply .pomphlet::after {
 community .apply .fourApply .taxi {
   position: absolute;
   top: 67px;
-  right: 37px;
+  right: 113px;
+  width: 250px;
+  height: 250px;
+  padding: 25px;
   /* border-left: 1px solid #e2e5e8; */
+}
+
+community .apply .fourApply .taxi::after {
+  background-position: 100% 0;
+  content: "";
+  background: url("../images/community/community_cars_people.png") no-repeat 0 0/200%
+    auto;
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  top: 134px;
+  right: 0;
 }
 
 community .apply .fourApply .taxi > h2 {
@@ -211,17 +226,6 @@ community .apply .fourApply .taxi .short-cut::after {
     auto;
   width: 16px;
   height: 12px;
-}
-
-community .apply .fourApply .taxi::after {
-  background-position: 100% 0;
-  content: "";
-  background: url("../images/community/community_cars_people.png") no-repeat 0 0/200%
-    auto;
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  right: 0;
 }
 
 community .apply .fourApply .cityTour {
