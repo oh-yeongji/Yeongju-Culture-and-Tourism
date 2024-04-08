@@ -113,6 +113,17 @@ community .apply .incentiveApply > div:hover i {
   display: block;
 }
 
+community .apply .fourApply {
+  width: 47%;
+  float: left;
+}
+
+community .apply .fourApply div {
+  border-right: 1px solid #e2e5e8;
+  border-top: 1px solid #e2e5e8;
+  width: 50%;
+}
+
 community .apply .fourApply .pomphlet {
   position: absolute;
   top: 10%;
