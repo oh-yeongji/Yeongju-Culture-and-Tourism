@@ -128,7 +128,7 @@ community .apply .fourApply .pomphlet {
   position: absolute;
   top: 10%;
   left: 57%;
-  width: 250px;
+  /* width: 250px; */
   height: 250px;
   /* border-bottom: 1px solid #e2e5e8; */
   padding: 25px;
@@ -184,7 +184,7 @@ community .apply .fourApply .taxi {
   position: absolute;
   top: 67px;
   right: 113px;
-  width: 250px;
+  /* width: 250px; */
   height: 250px;
   padding: 25px;
   /* border-left: 1px solid #e2e5e8; */
