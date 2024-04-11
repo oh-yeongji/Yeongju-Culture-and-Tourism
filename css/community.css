@@ -122,6 +122,7 @@ community .apply .fourApply div {
   border-right: 1px solid #e2e5e8;
   border-top: 1px solid #e2e5e8;
   width: 50%;
+  height: 250px;
 }
 
 community .apply .fourApply .pomphlet {
@@ -129,7 +130,7 @@ community .apply .fourApply .pomphlet {
   top: 10%;
   left: 57%;
   /* width: 250px; */
-  height: 250px;
+  /* height: 250px; */
   /* border-bottom: 1px solid #e2e5e8; */
   padding: 25px;
 }
@@ -185,7 +186,7 @@ community .apply .fourApply .taxi {
   top: 67px;
   right: 113px;
   /* width: 250px; */
-  height: 250px;
+  /* height: 250px; */
   padding: 25px;
   /* border-left: 1px solid #e2e5e8; */
 }
