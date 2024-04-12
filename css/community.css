@@ -52,6 +52,7 @@ community .festival .contents > li > p:nth-child(1) {
 
 community .apply .incentiveApply {
   position: absolute;
+  width: 24%;
   top: 66px;
   left: 486px;
   padding-top: 36px;
