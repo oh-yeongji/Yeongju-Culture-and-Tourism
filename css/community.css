@@ -242,8 +242,8 @@ community .apply .fourApply .taxi .short-cut::after {
 }
 
 community .apply .fourApply .cityTour {
-  position: absolute;
-  width: 300px;
+  position: relative;
+  width: 50%;
   height: 300px;
   top: 50%;
   right: 24%;
@@ -301,8 +301,8 @@ community .apply .fourApply .cityTour > a {
 }
 
 community .apply .fourApply .commentator {
-  position: absolute;
-  width: 300px;
+  position: relative;
+  width: 50%;
   height: 300px;
   top: 50%;
   right: 4%;
