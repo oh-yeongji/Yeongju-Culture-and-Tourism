@@ -115,8 +115,11 @@ community .apply .incentiveApply > div:hover i {
 }
 
 community .apply .fourApply {
+  position: absolute;
   width: 47%;
   float: left;
+  top: 0;
+  right: 0;
 }
 
 community .apply .fourApply div {
