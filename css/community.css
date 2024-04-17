@@ -123,20 +123,13 @@ community .apply .fourApply {
 }
 
 community .apply .fourApply div {
-  border-right: 1px solid #e2e5e8;
-  border-top: 1px solid #e2e5e8;
+  position: relative;
   width: 50%;
   height: 250px;
-}
-
-community .apply .fourApply .pomphlet {
-  position: relative;
-  top: 10%;
-  left: 57%;
-  width: 50%;
-  /* height: 250px; */
-  /* border-bottom: 1px solid #e2e5e8; */
   padding: 25px;
+  float: left;
+  border-right: 1px solid #e2e5e8;
+  border-top: 1px solid #e2e5e8;
 }
 
 community .apply .fourApply .pomphlet > h2 {
@@ -183,16 +176,6 @@ community .apply .fourApply .pomphlet::after {
     auto;
   left: 131px;
   top: 50%;
-}
-
-community .apply .fourApply .taxi {
-  position: relative;
-  top: 67px;
-  right: 113px;
-  width: 50%;
-  /* height: 250px; */
-  padding: 25px;
-  /* border-left: 1px solid #e2e5e8; */
 }
 
 community .apply .fourApply .taxi::after {
@@ -244,14 +227,6 @@ community .apply .fourApply .taxi .short-cut::after {
   height: 12px;
 }
 
-community .apply .fourApply .cityTour {
-  position: relative;
-  width: 50%;
-  height: 300px;
-  top: 50%;
-  right: 24%;
-  border-right: 1px solid #e2e5e8;
-}
 community .apply .fourApply .cityTour > h2 {
   font-size: 23px;
   position: absolute;
@@ -301,15 +276,6 @@ community .apply .fourApply .cityTour > a {
   position: absolute;
   top: 50%;
   right: 0;
-}
-
-community .apply .fourApply .commentator {
-  position: relative;
-  width: 50%;
-  height: 300px;
-  top: 50%;
-  right: 4%;
-  border-top: 1px solid #e2e5e8;
 }
 
 community .apply .fourApply .commentator > h2 {
