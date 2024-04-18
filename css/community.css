@@ -54,7 +54,7 @@ community .apply .incentiveApply {
   position: absolute;
   width: 24%;
   top: 66px;
-  left: 486px;
+  left: 469px;
   padding-top: 36px;
 }
 
@@ -118,18 +118,29 @@ community .apply .fourApply {
   position: absolute;
   width: 47%;
   float: left;
-  top: 0;
-  right: 0;
+  top: 54px;
+  right: -30px;
 }
 
 community .apply .fourApply div {
   position: relative;
-  width: 50%;
+  width: 322px;
   height: 250px;
   padding: 25px;
   float: left;
   border-right: 1px solid #e2e5e8;
   border-top: 1px solid #e2e5e8;
+}
+
+community .apply .fourApply div::after {
+  position: absolute;
+  content: "";
+  background: url("../images/community/community_cars_people.png") no-repeat 0 0/200%
+    auto;
+  right: 0;
+  bottom: 0;
+  width: 140px;
+  height: 140px;
 }
 
 community .apply .fourApply .pomphlet > h2 {
@@ -149,7 +160,7 @@ community .apply .fourApply .pomphlet .short-cut {
   height: 34px;
   position: relative;
   display: block;
-  padding: 5px 32px 5px 20px;
+  padding: 5px 31px 5px 20px;
   background: #cfd1d5;
   border-radius: 20px;
   color: #fff;
@@ -167,27 +178,8 @@ community .apply .fourApply .pomphlet .short-cut::after {
   height: 12px;
 }
 
-community .apply .fourApply .pomphlet::after {
-  content: "";
-  position: absolute;
-  width: 140px;
-  height: 140px;
-  background: url("../images/community/community_cars_people.png") no-repeat 0 0/200%
-    auto;
-  left: 131px;
-  top: 50%;
-}
-
 community .apply .fourApply .taxi::after {
   background-position: 100% 0;
-  content: "";
-  background: url("../images/community/community_cars_people.png") no-repeat 0 0/200%
-    auto;
-  position: absolute;
-  width: 140px;
-  height: 140px;
-  top: 134px;
-  right: 0;
 }
 
 community .apply .fourApply .taxi > h2 {
@@ -209,7 +201,7 @@ community .apply .fourApply .taxi .short-cut {
   height: 34px;
   position: relative;
   display: block;
-  padding: 5px 32px 5px 20px;
+  padding: 5px 31px 5px 20px;
   background: #cfd1d5;
   border-radius: 20px;
   color: #fff;
@@ -247,7 +239,7 @@ community .apply .fourApply .cityTour .short-cut {
   height: 34px;
   position: relative;
   display: block;
-  padding: 5px 32px 5px 20px;
+  padding: 5px 31px 5px 20px;
   background: #cfd1d5;
   border-radius: 20px;
   color: #fff;
@@ -267,15 +259,8 @@ community .apply .fourApply .cityTour .short-cut::after {
   height: 12px;
 }
 
-community .apply .fourApply .cityTour > a {
+community .apply .fourApply .cityTour::after {
   background-position: 0 100%;
-  background: url("../images/community/community_cars_people.png") no-repeat 0 0/200%
-    auto;
-  width: 120px;
-  height: 120px;
-  position: absolute;
-  top: 50%;
-  right: 0;
 }
 
 community .apply .fourApply .commentator > h2 {
@@ -293,7 +278,7 @@ community .apply .fourApply .commentator .short-cut {
   height: 34px;
   position: relative;
   display: block;
-  padding: 5px 32px 5px 20px;
+  padding: 5px 31px 5px 20px;
   background: #cfd1d5;
   border-radius: 20px;
   color: #fff;
@@ -311,11 +296,6 @@ community .apply .fourApply .commentator .short-cut::after {
   height: 12px;
 }
 
-community .apply .fourApply .commentator > a {
-  position: absolute;
+community .apply .fourApply .commentator::after {
   background-position: 100% 100%;
-  background: url("../images/community/community_cars_people.png") no-repeat 0 0/200%
-    auto;
-  width: 120px;
-  height: 120px;
 }
