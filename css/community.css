@@ -221,14 +221,9 @@ community .apply .fourApply .taxi .short-cut::after {
 
 community .apply .fourApply .cityTour > h2 {
   font-size: 23px;
-  position: absolute;
-  left: 35px;
 }
 
 community .apply .fourApply .cityTour > p {
-  position: absolute;
-  top: 34px;
-  left: 35px;
   font-size: 13px;
   color: #666;
   margin: 10px 0 30px;
