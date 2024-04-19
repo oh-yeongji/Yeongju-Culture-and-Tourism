@@ -149,7 +149,7 @@ community .apply .fourApply .pomphlet > h2 {
 }
 
 community .apply .fourApply .pomphlet > p {
-  font-size: 13px;
+  font-size: 14px;
   color: #666;
   margin: 10px 0 30px;
   white-space: nowrap;
@@ -190,7 +190,8 @@ community .apply .fourApply .taxi > h2 {
 }
 
 community .apply .fourApply .taxi > p {
-  font-size: 13px;
+  font-size: 14px;
+  white-space: nowrap;
   color: #666;
   margin: 10px 0 30px;
 }
@@ -223,7 +224,8 @@ community .apply .fourApply .cityTour > h2 {
 }
 
 community .apply .fourApply .cityTour > p {
-  font-size: 13px;
+  font-size: 14px;
+  white-space: nowrap;
   color: #666;
   margin: 10px 0 30px;
 }
@@ -238,8 +240,6 @@ community .apply .fourApply .cityTour .short-cut {
   border-radius: 20px;
   color: #fff;
   z-index: 99999999;
-  top: 87px;
-  left: 33px;
 }
 
 community .apply .fourApply .cityTour .short-cut::after {
