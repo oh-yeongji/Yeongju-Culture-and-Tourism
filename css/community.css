@@ -39,6 +39,7 @@ community .festival .contents li {
 community .festival ul {
   list-style: none;
 }
+
 community .festival .contents li > a {
   display: block;
   padding: 6px 20px;
@@ -46,7 +47,7 @@ community .festival .contents li > a {
   color: #fff;
 }
 
-community .festival .contents > li > p:nth-child(1) {
+community .festival .contents > li .border {
   border-color: #fff;
 }
 
@@ -128,8 +129,9 @@ community .apply .fourApply div {
   height: 250px;
   padding: 25px;
   float: left;
-  border-right: 1px solid #e2e5e8;
+  border-left: 1px solid #e2e5e8;
   border-top: 1px solid #e2e5e8;
+  margin: -1px 0 0 -1px;
 }
 
 community .apply .fourApply div::after {
