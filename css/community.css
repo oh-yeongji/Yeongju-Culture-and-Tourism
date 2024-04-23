@@ -97,6 +97,7 @@ community .apply .incentiveApply > div > p {
   position: relative;
   left: 19px;
   top: 25%;
+  display: none;
 }
 
 community .apply .incentiveApply > div > i {
