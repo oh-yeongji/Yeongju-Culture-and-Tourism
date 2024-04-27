@@ -102,8 +102,7 @@ community .apply .incentiveApply > div > p {
 community .apply .incentiveApply > div > i {
   position: absolute;
   float: right;
-  right: 120px;
-  display: none;
+  right: 60px;
   opacity: 0;
   visibility: hidden;
   transition: right 0.5s ease, opacity 0.5s ease, visibility 0.5s;
@@ -118,10 +117,9 @@ community .apply .incentiveApply > div:hover {
 }
 
 community .apply .incentiveApply > div:hover i {
-  right: 110px;
+  right: 45px;
   transition: right 0.5s ease;
   opacity: 1;
-  /* display: block; */
   visibility: visible;
 }
 
