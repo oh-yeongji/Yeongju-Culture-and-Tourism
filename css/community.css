@@ -97,26 +97,32 @@ community .apply .incentiveApply > div > p {
   position: relative;
   left: 19px;
   top: 25%;
-  display: none;
 }
 
 community .apply .incentiveApply > div > i {
   position: absolute;
   float: right;
   right: 120px;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: right 0.5s ease, opacity 0.5s ease, visibility 0.5s;
 }
 
 community .apply .incentiveApply > div:hover {
   color: #1b52a1;
   border-color: #1b52a1;
   font-weight: 700;
+  opacity: 1;
+  visibility: visible;
 }
 
 community .apply .incentiveApply > div:hover i {
   right: 110px;
   transition: right 0.5s ease;
   opacity: 1;
-  display: block;
+  /* display: block; */
+  visibility: visible;
 }
 
 community .apply .fourApply {
