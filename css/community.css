@@ -40,6 +40,7 @@ community .festival .contents li {
 }
 community .festival ul {
   list-style: none;
+  margin: 0 26px 0 10px;
 }
 
 community .festival .contents li > a {
