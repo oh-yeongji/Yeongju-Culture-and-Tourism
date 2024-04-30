@@ -24,13 +24,21 @@ community .festival .titie > div {
   color: #b3e7ff;
   text-transform: uppercase;
   margin-top: 4px;
+  font-size: 15px;
+  margin-left: 22px;
   line-height: 1.1;
 }
 community .festival .titie span {
   position: absolute;
   display: inline-block;
-  font-size: 27px;
+  font-size: 25px;
 }
+
+community .festival .titie span > strong {
+  position: relative;
+  right: 7px;
+}
+
 community .festival .image {
   margin: 15px 10px;
 }
