@@ -107,7 +107,34 @@ hotspot .slidesShow .slides .btns .left {
   z-index: 99;
 }
 
+/**slides삭제했을때**/
+hotspot .slidesShow .btns .left {
+  position: absolute;
+  top: 50%;
+  left: 34px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #009dd0;
+  z-index: 99;
+}
+
 hotspot .slidesShow .slides .btns .left::before {
+  content: "";
+  background: url("../images/hotspot/hotspot_pre_stop_next.png") no-repeat 0 0/400%
+    auto;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-position: 0 100%;
+  z-index: 99;
+}
+
+/**slides삭제했을때**/
+hotspot .slidesShow .btns .left::before {
   content: "";
   background: url("../images/hotspot/hotspot_pre_stop_next.png") no-repeat 0 0/400%
     auto;
@@ -132,7 +159,34 @@ hotspot .slidesShow .slides .btns .right {
   z-index: 99;
 }
 
+/**slides 삭제했을때**/
+hotspot .slidesShow .btns .right {
+  position: absolute;
+  top: 50%;
+  left: calc(533px - 25px);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #009dd0;
+  z-index: 99;
+}
+
 hotspot .slides .btns .right::before {
+  content: "";
+  background: url("../images/hotspot/hotspot_pre_stop_next.png") no-repeat 0 0/400%
+    auto;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(180deg);
+  background-position: 0 100%;
+  z-index: 99;
+}
+
+/**slides삭제했을때**/
+hotspot .btns .right::before {
   content: "";
   background: url("../images/hotspot/hotspot_pre_stop_next.png") no-repeat 0 0/400%
     auto;
@@ -155,7 +209,38 @@ hotspot .slides .first_pic {
   margin-left: 58px;
 }
 
+/**slides삭제했을때**/
+hotspot .first_pic {
+  background: url("../images/hotspot/hotspot_first_pic.jpg") no-repeat center;
+  width: 475px;
+  height: 339px;
+  object-fit: cover;
+  position: absolute;
+  margin-left: 58px;
+  list-style: none;
+}
+
 hotspot .slides .first_pic::before {
+  content: "자세히보기";
+  background: rgba(0, 0, 0, 0.5) url("../images/hotspot/hotspot_d.png")
+    no-repeat center 30px;
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding-top: 75px;
+  z-index: 99;
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+/**slides삭제했을때**/
+hotspot .first_pic::before {
   content: "자세히보기";
   background: rgba(0, 0, 0, 0.5) url("../images/hotspot/hotspot_d.png")
     no-repeat center 30px;
@@ -183,6 +268,16 @@ hotspot .slides .second_pic {
   margin-right: 32px;
 }
 
+/**slides삭제했을때**/
+hotspot .second_pic {
+  float: right;
+  width: 475px;
+  height: 339px;
+  background: url("../images/hotspot/hotspot_second_pic.jpg") no-repeat center;
+  object-fit: cover;
+  margin-right: 32px;
+}
+
 hotspot .slides .second_pic a {
   background: #fff;
   width: 250px;
@@ -192,7 +287,25 @@ hotspot .slides .second_pic a {
   right: 32px;
 }
 
+/**slides삭제했을때**/
+hotspot .second_pic a {
+  background: #fff;
+  width: 250px;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  right: 32px;
+}
+
 hotspot .slides .second_pic a b {
+  position: absolute;
+  top: 37%;
+  left: 22px;
+  white-space: nowrap;
+}
+
+/**slides삭제했을때**/
+hotspot .second_pic a b {
   position: absolute;
   top: 37%;
   left: 22px;
@@ -209,4 +322,31 @@ hotspot .slides .second_pic a:after {
   width: 20px;
   height: 20px;
   z-index: 99;
+}
+
+/**slides삭제했을때**/
+hotspot .second_pic a:after {
+  position: absolute;
+  top: 42%;
+  right: 8%;
+  content: "";
+  background: url("../images/hotspot/hotspot_side_next.png") no-repeat 0 0/100%
+    auto;
+  width: 20px;
+  height: 20px;
+  z-index: 99;
+}
+
+hotspot .third_pic {
+  float: right;
+  width: 475px;
+  right: -497px;
+  height: 339px;
+  background: url(../images/hotspot/hotspot_second_pic.jpg) no-repeat center;
+  object-fit: cover;
+  margin-right: 32px;
+  background: #000;
+  position: absolute;
+  list-style: none;
+  overflow: hidden;
 }
