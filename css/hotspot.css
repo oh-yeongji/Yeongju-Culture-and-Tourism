@@ -76,7 +76,7 @@ hotspot .info .history {
   overflow: hidden;
 }
 
-hotspot .slidesShow {
+hotspot .slider {
   position: absolute;
   top: 0;
   right: 0;
@@ -96,7 +96,7 @@ hotspot .slidesShow {
   z-index: 99;
 } */
 
-hotspot .slidesShow .slides .btns .left {
+hotspot .slider .slides .btns .left {
   position: absolute;
   top: 50%;
   left: 34px;
@@ -108,7 +108,7 @@ hotspot .slidesShow .slides .btns .left {
 }
 
 /**slides삭제했을때**/
-hotspot .slidesShow .btns .left {
+hotspot .slider .btns .left {
   position: absolute;
   top: 50%;
   left: 34px;
@@ -119,7 +119,7 @@ hotspot .slidesShow .btns .left {
   z-index: 99;
 }
 
-hotspot .slidesShow .slides .btns .left::before {
+hotspot .slider .slides .btns .left::before {
   content: "";
   background: url("../images/hotspot/hotspot_pre_stop_next.png") no-repeat 0 0/400%
     auto;
@@ -134,7 +134,7 @@ hotspot .slidesShow .slides .btns .left::before {
 }
 
 /**slides삭제했을때**/
-hotspot .slidesShow .btns .left::before {
+hotspot .slider .btns .left::before {
   content: "";
   background: url("../images/hotspot/hotspot_pre_stop_next.png") no-repeat 0 0/400%
     auto;
@@ -148,7 +148,7 @@ hotspot .slidesShow .btns .left::before {
   z-index: 99;
 }
 
-hotspot .slidesShow .slides .btns .right {
+hotspot .slider .slides .btns .right {
   position: absolute;
   top: 50%;
   left: calc(533px - 25px);
@@ -160,7 +160,7 @@ hotspot .slidesShow .slides .btns .right {
 }
 
 /**slides 삭제했을때**/
-hotspot .slidesShow .btns .right {
+hotspot .slider .btns .right {
   position: absolute;
   top: 50%;
   left: calc(533px - 25px);
@@ -345,7 +345,7 @@ hotspot .third_pic {
   background: url(../images/hotspot/hotspot_second_pic.jpg) no-repeat center;
   object-fit: cover;
   margin-right: 32px;
-  background: #000;
+  /* background: #000; */
   position: absolute;
   list-style: none;
   overflow: hidden;
