@@ -76,7 +76,7 @@ hotspot .info .history {
   overflow: hidden;
 }
 
-hotspot .slick-slider {
+hotspot .slider {
   position: absolute;
   top: 0;
   right: 0;
@@ -84,27 +84,6 @@ hotspot .slick-slider {
   width: 72%;
   height: 339px;
   /* background: #009dd0; */
-}
-
-hotspot .slider .slick-arrow {
-  &.slick-prev {
-    position: absolute;
-    top: 50%;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #009dd0;
-    z-index: 99;
-  }
-  &.slick-prev {
-    position: absolute;
-    top: 50%;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #009dd0;
-    z-index: 99;
-  }
 }
 
 hotspot .slick-slide {
@@ -120,7 +99,7 @@ hotspot .slick-slide {
   }
 }
 
-hotspot .slider .btns .prevBtn {
+hotspot .slider .slickBtns .prevBtn {
   position: absolute;
   top: 50%;
   left: 34px;
@@ -131,7 +110,7 @@ hotspot .slider .btns .prevBtn {
   z-index: 99;
 }
 
-hotspot .slider .btns .prevBtn::before {
+hotspot .slider .slickBtns .prevBtn::before {
   content: "";
   background: url("../images/hotspot/hotspot_pre_stop_next.png") no-repeat 0 0/400%
     auto;
@@ -145,7 +124,7 @@ hotspot .slider .btns .prevBtn::before {
   z-index: 99;
 }
 
-hotspot .slider .btns .nextBtn {
+hotspot .slider .slickBtns .nextBtn {
   position: absolute;
   top: 50%;
   left: calc(533px - 25px);
@@ -156,7 +135,7 @@ hotspot .slider .btns .nextBtn {
   z-index: 99;
 }
 
-hotspot .slider .btns .nextBtn::before {
+hotspot .slider .slickBtns .nextBtn::before {
   content: "";
   background: url("../images/hotspot/hotspot_pre_stop_next.png") no-repeat 0 0/400%
     auto;
@@ -170,17 +149,7 @@ hotspot .slider .btns .nextBtn::before {
   z-index: 99;
 }
 
-hotspot .slider .first_pic {
-  /* background: url("../images/hotspot/hotspot_first_pic.jpg") no-repeat center;
-  width: 475px;
-  height: 339px;
-  object-fit: cover;
-  position: absolute;
-  margin-left: 58px;
-  list-style: none; */
-}
-
-hotspot .slick-slide {
+hotspot .slider {
   .first_pic::before {
     content: "자세히보기";
     background: rgba(0, 0, 0, 0.5) url("../images/hotspot/hotspot_d.png")
