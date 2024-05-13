@@ -167,7 +167,7 @@ hotspot .slider {
     transform: translate(-50%, -50%);
     text-align: center;
     color: #fff;
-    z-index: 99999999999999999999999999999999;
+    z-index: 9;
   }
 }
 
