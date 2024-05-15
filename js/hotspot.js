@@ -1,18 +1,7 @@
 $(Document).ready(function () {
   $(function () {
-    // hotspot pics
-    $(".slider-pics").slick({
-      slidesToShow: 2,
-      slidesToScroll: 1,
-      prevArrow: $(".prevBtn"),
-      nextArrow: $(".nextBtn"),
-      autoplay: false,
-      fade: false,
-      asNavFor: ".slider-info",
-    });
-
     //hotspot info
-    $(".slider-info").slick({
+    $(".slider-place").slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
@@ -23,5 +12,17 @@ $(Document).ready(function () {
       fade: true,
       asNavFor: ".slider-pics",
     });
+  });
+
+  // hotspot pics
+  $(".slider-pics").slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    prevArrow: $(".prevBtn"),
+    nextArrow: $(".nextBtn"),
+    autoplay: false,
+    draggable: false,
+    fade: false,
+    asNavFor: ".slider-info",
   });
 });

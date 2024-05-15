@@ -10,14 +10,14 @@ header {
   z-index: 1000;
 }
 
-.mainMenu > li:hover .subMenu {
+header .mainMenu > li:hover .subMenu {
   display: block;
   height: 350px;
   opacity: 1;
   animation: fadeInUp 0.3s ease forwards;
 }
 
-.logo {
+header .logo {
   background-color: #1b52a2;
   width: auto;
   padding: 101px 30px 30px;
@@ -26,34 +26,34 @@ header {
   z-index: 9999;
 }
 
-.mainMenu {
+header .mainMenu {
   display: flex;
   justify-content: space-around;
 }
-.mainMenu > li:nth-child(-n + 5) {
+header .mainMenu > li:nth-child(-n + 5) {
   margin-right: 60px;
 }
 
-.mainMenu > li > a {
+header .mainMenu > li > a {
   color: #333;
   font-size: 20px;
   font-weight: 600;
 }
 
-.side-header {
+header .side-header {
   position: relative;
   display: flex;
   justify-content: space-around;
 }
-.side-header > li:nth-child(-n + 3) {
+header .side-header > li:nth-child(-n + 3) {
   margin-right: 30px;
 }
 
-.short-cut {
+header .short-cut {
   display: flex;
   align-items: center;
 }
-.arrow-bg {
+header .arrow-bg {
   font-weight: 400;
   margin-right: 3px;
   display: flex;
@@ -67,11 +67,11 @@ header {
   background-color: #009dd0;
 }
 
-strong {
+header > strong {
   margin-right: 3px;
 }
 
-.subMenu {
+header .subMenu {
   position: absolute;
   height: 378px;
   left: 0;
@@ -83,32 +83,32 @@ strong {
   background-color: #fff;
 }
 
-.subInner {
+header .subInner {
   margin-left: 180px;
 }
 
-.leftSub {
+header .leftSub {
   float: left;
   width: 20%;
   border-right: 1px dashed #ccc;
 }
 
-h2 {
+header > h2 {
   font-size: 40px;
 }
-.info {
+header .info {
   margin-top: 10px;
   line-height: 26px;
 }
-.leftPic {
+header .leftPic {
   width: 300px;
 }
-.imgCar {
+header .imgCar {
   position: absolute;
   top: 206px;
   left: 235px;
 }
-.rightSub {
+header .rightSub {
   position: relative;
   left: 63px;
   float: left;
@@ -288,6 +288,7 @@ input[type="text"] {
   text-align: center;
   background-color: #fff;
 }
+
 @keyframes fadeInOut {
   from {
     opacity: 1;

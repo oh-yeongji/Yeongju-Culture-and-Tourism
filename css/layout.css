@@ -31,3 +31,7 @@ body {
   min-width: 515px;
   font-family: "Pretendard", "맑은 고딕", sans-serif;
 }
+
+h2 {
+  font-family: "MICEGothic Bold", "Pretendard", "맑은 고딕", sans-serif;
+}
