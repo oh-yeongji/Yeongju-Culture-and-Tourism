@@ -42,6 +42,7 @@ hotspot .slider-info > h2 {
 
 hotspot .slider-info .hashTag {
   position: relative;
+  display: inline-block;
   font-size: 22px;
   margin-top: 44px;
   background: #fff;
@@ -55,10 +56,10 @@ hotspot .slider-info .hashTag > strong {
 
 hotspot .slider-info .slider-address {
   position: relative;
-  top: -2px;
-  left: 0px;
+  top: 78px;
+  left: 186px;
   display: inline-block;
-  text-align: inherit;
+  white-space: nowrap;
 }
 
 hotspot .slider-info .slider-address::before {
@@ -68,7 +69,7 @@ hotspot .slider-info .slider-address::before {
   height: 25px;
   width: 25px;
   z-index: 999999;
-  /* left: -19px; */
+  left: -16px;
 }
 hotspot .slider-pics {
   display: none;

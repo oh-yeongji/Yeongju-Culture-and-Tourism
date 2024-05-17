@@ -9,7 +9,7 @@ $(Document).ready(function () {
       dots: false,
       centerMode: true,
       focusOnSelect: true,
-      fade: true,
+      fade: false,
       asNavFor: ".slider-pics",
     });
   });
