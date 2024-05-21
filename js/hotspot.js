@@ -6,6 +6,7 @@ $(Document).ready(function () {
       slidesToScroll: 1,
       arrows: false,
       autoplay: false,
+      draggable: false,
       dots: false,
       centerMode: true,
       focusOnSelect: true,
@@ -21,7 +22,7 @@ $(Document).ready(function () {
     prevArrow: $(".prevBtn"),
     nextArrow: $(".nextBtn"),
     autoplay: false,
-    draggable: false,
+    draggable: true,
     fade: false,
     asNavFor: ".slider-info",
   });
