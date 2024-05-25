@@ -7,6 +7,7 @@ hotspot {
   margin: 130px 0 100px;
   display: inline-block;
   bottom: -866px;
+  background: #000;
   /* z-index: 999; */
 }
 
@@ -17,7 +18,8 @@ hotspot .slider-info {
   left: 70px;
   width: 21%;
   height: 100%;
-  z-index: 999999;
+  /* z-index: 999999; */
+  background: #009dd0;
 }
 
 hotspot .slider-info p {
@@ -68,7 +70,7 @@ hotspot .slider-info .slider-address::before {
   background: url("../images/hotspot/hotspot_picker.png") no-repeat;
   height: 25px;
   width: 25px;
-  z-index: 999999;
+  /* z-index: 999999; */
   left: -16px;
 }
 
@@ -82,13 +84,29 @@ hotspot .slider-info .history {
 }
 
 hotspot .slider-pics {
-  /* display: none; */
-  position: relative;
-  right: 50%;
-  width: 75%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: red;
+  width: 70%;
 }
 
 hotspot .slider-pics .first_pic_slide > img {
   position: absolute;
-  z-index: 99999999999999999999999999999;
+  /* left: 0; */
+  float: right;
+}
+
+hotspot .slider-pics .second_pic_slide > img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  float: right;
+}
+
+hotspot .slider-pics .third_pic_slide > img {
+  position: absolute;
+  top: 0;
+  right: -454px;
+  float: right;
 }
