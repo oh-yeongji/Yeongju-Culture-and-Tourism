@@ -14,15 +14,18 @@ $(Document).ready(function () {
   //     asNavFor: ".slider-pics",
   //   });
   // });
+
   // hotspot pics
-  // $(".slider-pics").slick({
-  //   slidesToShow: 2,
-  //   slidesToScroll: 1,
-  //   prevArrow: $(".prevBtn"),
-  //   nextArrow: $(".nextBtn"),
-  //   autoplay: false,
-  //   draggable: true,
-  //   fade: false,
-  //   asNavFor: ".slider-info",
-  // });
+  $(".slider-pics").slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    prevArrow: $(".prevBtn"),
+    nextArrow: $(".nextBtn"),
+    centerMode: false,
+    adaptiveHeight: false,
+    autoplay: false,
+    draggable: true,
+    fade: false,
+    asNavFor: ".slider-info",
+  });
 });

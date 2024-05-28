@@ -7,7 +7,7 @@ hotspot {
   margin: 130px 0 100px;
   display: inline-block;
   bottom: -866px;
-  background: #000;
+  /* background: #000; */
   /* z-index: 999; */
 }
 
@@ -84,10 +84,11 @@ hotspot .slider-info .history {
 }
 
 hotspot .slider-pics {
+  height: 339px;
   position: absolute;
   top: 0;
   right: 0;
-  background: red;
+  /* background: red; */
   width: 70%;
 }
 
@@ -95,6 +96,12 @@ hotspot .slider-pics .first_pic_slide > img {
   position: absolute;
   /* left: 0; */
   float: right;
+}
+
+hotspot .slider-pics .slickBtns {
+  position: relative;
+  right: 50%;
+  background: #000;
 }
 
 hotspot .slider-pics .second_pic_slide > img {
@@ -109,4 +116,8 @@ hotspot .slider-pics .third_pic_slide > img {
   top: 0;
   right: -454px;
   float: right;
+}
+
+hotspot .slick-track {
+  height: 339px;
 }
