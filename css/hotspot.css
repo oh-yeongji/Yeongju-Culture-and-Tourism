@@ -11,83 +11,11 @@ hotspot {
   /* z-index: 999; */
 }
 
-hotspot .slider-info {
-  position: relative;
-  display: inline-block;
-  margin-top: 0;
-  left: 70px;
-  width: 21%;
-  height: 100%;
-  /* z-index: 999999; */
-  background: #009dd0;
-}
-
-hotspot .slider-info p {
-  font-size: 40px;
-}
-
-hotspot .slider-info > p::before {
-  content: "";
-  background: url("../images/hotspot/hotspot_heart.png") no-repeat;
-  width: 90px;
-  height: 110px;
-  position: absolute;
-  top: -64px;
-  left: 158px;
-}
-
-hotspot .slider-info > h2 {
-  font-size: 50px;
-  line-height: 1;
-}
-
-hotspot .slider-info .hashTag {
-  position: relative;
-  display: inline-block;
-  font-size: 22px;
-  margin-top: 44px;
-  background: #fff;
-  font-weight: 700;
-  left: -38px;
-}
-
-hotspot .slider-info .hashTag > strong {
-  color: #009dd0;
-  font-weight: 700;
-}
-
-hotspot .slider-info .slider-address {
-  position: relative;
-  top: 78px;
-  left: 186px;
-  display: inline-block;
-  white-space: nowrap;
-}
-
-hotspot .slider-info .slider-address::before {
-  position: absolute;
-  content: "";
-  background: url("../images/hotspot/hotspot_picker.png") no-repeat;
-  height: 25px;
-  width: 25px;
-  /* z-index: 999999; */
-  left: -16px;
-}
-
-hotspot .slider-info .history {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-hotspot .slider-pics {
+hotspot .slider .slider-pics {
   height: 339px;
   position: absolute;
   top: 0;
-  right: 0;
+  /* left: 0; */
   /* background: red; */
   width: 70%;
 }
@@ -95,44 +23,49 @@ hotspot .slider-pics {
 hotspot .slider-pics .first_pic_slide > img {
   position: absolute;
   /* left: 0; */
+  width: 475px;
+  height: 339px;
   float: right;
 }
 
-hotspot .slider-pics .slickBtns {
+hotspot .slickBtns {
   position: relative;
   right: 50%;
 }
 
-hotspot .slider-pics .prevBtn {
+hotspot .prevBtn {
   position: relative;
   top: 47%;
-  background: bisque;
+  background-color: bisque;
   border-radius: 50%;
   width: 50px;
   height: 50px;
 }
 
-hotspot .slider-pics .nextBtn {
+hotspot .nextBtn {
   position: absolute;
   left: 60%;
   top: 48%;
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  background: cadetblue;
+  background-color: bisque;
 }
 
 hotspot .slider-pics .second_pic_slide > img {
   position: absolute;
   top: 0;
   left: 50%;
+  width: 475px;
+  height: 339px;
   float: right;
 }
 
 hotspot .slider-pics .third_pic_slide > img {
   position: absolute;
   top: 0;
-  right: -454px;
+  right: -41%;
+  /* right: -454px; */
   float: right;
 }
 

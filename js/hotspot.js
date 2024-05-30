@@ -18,9 +18,10 @@ $(Document).ready(function () {
   // hotspot pics
   $(".slider-pics").slick({
     slidesToShow: 2,
-    slidesToScroll: 1,
-    prevArrow: $(".prevBtn"),
-    nextArrow: $(".nextBtn"),
+    slidesToScroll: 2,
+    // arrows: true,
+    prevArrow: `<div class="prevBtn"></div>`,
+    nextArrow: `<div class="nextBtn"></div>`,
     centerMode: false,
     adaptiveHeight: false,
     autoplay: false,
@@ -28,4 +29,10 @@ $(Document).ready(function () {
     fade: false,
     asNavFor: ".slider-info",
   });
+
+  document.querySelector(".slickBtns .nextBtn").onclick = function () {
+    document.querySelector(
+      ".slickBtns .nextBtn"
+    ).style.backgroundColor = ` "blue"`;
+  };
 });
