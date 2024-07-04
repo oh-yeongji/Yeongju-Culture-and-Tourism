@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 @media screen and (min-width: 1200px) {
-  sideMenu {
+  .sideMenu {
     display: none;
   }
 }
@@ -19,7 +19,7 @@
     z-index: 999999;
     background: rgba(0, 0, 0, 0.7);
   }
-  sideMenu {
+  .sideMenu {
     position: relative;
     /* z-index: 999999999999; */
     width: 300px;
@@ -27,13 +27,13 @@
     background: #fff;
     float: right;
   }
-  sideMenu > sideTop {
+  .sideMenu .sideTop {
     display: flex;
     color: #fff;
     background: #1b52a1;
   }
 
-  sideMenu > sideTop .cityHall::after {
+  .sideMenu .sideTop .cityHall::after {
     width: 1px;
     height: 10px;
     content: "";
@@ -43,14 +43,19 @@
     transform: translateX(17px);
   }
 
-  sideMenu > sideTop > div {
+  .sideMenu .sideTop > div {
     display: inline-block;
     padding: 17.1px 19px;
   }
 
-  sideMenu > sideTop .closeX > i {
+  .sideMenu .sideTop .closeX > i {
     position: absolute;
     top: 20px;
     right: 10px;
+  }
+
+  .sideMenu .sideBody > div {
+    padding: 9.5px 19px;
+    border-bottom: #ccc 1px solid;
   }
 }
