@@ -1,12 +1,26 @@
 @charset "utf-8";
 
-@media screen and (min-width: 1200px) {
+/* animation적용 작동안됨 */
+@keyframes fadeInLeft {
+  from {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+}
+
+/*  반영안됨 */
+@media screen and (min-width: 1201px) and (max-width: 1536px) {
   .sideMenu {
     display: none;
   }
 }
 
-@media screen and (max-width: 1024px) {
+/*반영됨  */
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
   body {
     overflow-y: hidden;
   }
@@ -23,7 +37,6 @@
   .sideMenu {
     display: none;
     position: relative;
-    /* z-index: 999999999999; */
     width: 300px;
     height: 100%;
     background: #fff;

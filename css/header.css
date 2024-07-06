@@ -202,7 +202,6 @@ header .rightSub {
 
 #searchDown {
   display: none;
-  /* animation: fadeInOut 0.3s ease forwards; */
   z-index: 999;
   position: absolute;
   width: 100%;
