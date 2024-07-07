@@ -3,7 +3,7 @@ window.onload = function () {
   let closeX = document.querySelector(".closeX > i");
   let dim = document.querySelector(".dim");
 
-  let sideMenuIcon = document.querySelector(".search .side-menu");
+  let sideMenuIcon = document.querySelector(".side-menu");
 
   // sieMenuIcon click시 sideMenu크기조절 (100% or 0) 작동안됨
   sideMenuIcon.addEventListener("click", function () {
@@ -15,8 +15,8 @@ window.onload = function () {
     dim.style.display = dim.style.width === "0" ? "100%" : "0";
   });
 
-  // closeX.addEventListener("click", function () {
-  //   sideMenu.style.display = "none";
-  //   dim.style.display = "none";
-  // });
+  closeX.addEventListener("click", function () {
+    sideMenu.style.display = "none";
+    dim.style.display = "none";
+  });
 };
