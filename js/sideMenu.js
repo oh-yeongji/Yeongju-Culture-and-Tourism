@@ -5,9 +5,8 @@ window.onload = function () {
 
   let sideMenuIcon = document.querySelector(".side-menu");
 
-  // sieMenuIcon click시 sideMenu크기조절 (100% or 0) 작동안됨
+
   sideMenuIcon.addEventListener("click", function () {
-    console.log("hi");
     sideMenu.style.display =
       sideMenu.style.display === "none" || sideMenu.style.display === ""
         ? "block"
