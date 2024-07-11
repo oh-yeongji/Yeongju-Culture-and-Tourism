@@ -1,12 +1,31 @@
 @charset "utf-8";
 
-body {
-  overflow-x: hidden;
-  overflow-y: hidden;
+/* animation적용 작동안됨 */
+@keyframes fadeInLeft {
+  from {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(20px);
+  }
 }
 
+/*  반영안됨 */
+/* @media screen and (min-width: 1201px) and (max-width: 1536px) {
+  .sideMenu {
+    display: none;
+  }
+} */
+
+/*반영됨  */
+body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
 .dim {
-  display: none;
+  /* display: none; */
   width: 100%;
   height: 100%;
   top: 0;
@@ -15,21 +34,12 @@ body {
   z-index: 999999;
   background: rgba(0, 0, 0, 0.7);
 }
-
 .sideMenu {
-  position: fixed;
-  width: 300px; /* 원하는 너비로 설정 */
+  position: relative;
   height: 100%;
   background: #fff;
-  right: -300px; /* 초기 위치를 화면 밖으로 설정 */
-  transition: all 0.85s cubic-bezier(0.43, 0.03, 0.21, 1);
-  transition-delay: 0.3s;
+  float: right;
 }
-
-.sideMenu.open {
-  right: 0; /* open 클래스가 추가되면 화면 안으로 이동 */
-}
-
 .sideMenu .sideTop {
   display: flex;
   color: #fff;
@@ -55,7 +65,6 @@ body {
   position: absolute;
   top: 20px;
   right: 10px;
-  cursor: pointer;
 }
 
 .sideMenu .sideBody > div {
