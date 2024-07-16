@@ -5,13 +5,17 @@ window.onload = function () {
   let sideMenuIcon = document.querySelector(".side-menu");
 
   sideMenuIcon.addEventListener("click", function () {
-    let isHidden = sideMenu.style.display === "none";
-    sideMenu.style.display = isHidden ? "block" : "none";
-    dim.style.display = isHidden ? "block" : "none";
+    sideMenu.classList.toggle("show");
+    dim.style.display = sideMenu.classList.contains("show") ? "block" : "none";
   });
 
   closeX.addEventListener("click", function () {
-    sideMenu.style.display = "none";
+    sideMenu.classList.remove("show");
+    dim.style.display = "none";
+  });
+
+  dim.addEventListener("click", function () {
+    sideMenu.classList.remove("show");
     dim.style.display = "none";
   });
 };
