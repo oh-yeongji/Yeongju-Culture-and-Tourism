@@ -3,10 +3,8 @@ window.onload = function () {
   let closeX = document.querySelector(".closeX > i");
   let sideMenuIcon = document.querySelector(".side-menu");
   let dim = document.querySelector(".dim");
-  let sideMenuBigLi = document.querySelectorAll(
-    ".sideMenu .sideBody > li > a"
-  );
-  let sideMenuMediLi = document.querySelectorAll(
+  let sideMenuBigLi = document.querySelectorAll(".sideMenu .sideBody > li > a");
+  let sideMenuMediUl = document.querySelectorAll(
     ".sideMenu .sideBody > li > ul"
   );
 
@@ -31,11 +29,11 @@ window.onload = function () {
       event.stopPropagation();
       let subMenu = this.nextElementSibling;
       if (subMenu) {
-        let isExpanded = subMenu.style.display === "block";
-        sideMenuMediLi.forEach(function (submenu) {
-          submenu.style.display = "none";
+        let isExpanded = subMenu.classList.contains("show");
+        sideMenuMediUl.forEach(function (submenu) {
+          submenu.classList.remove("show");
         });
-        subMenu.style.display = isExpanded ? "none" : "block";
+        subMenu.classList.toggle("show", !isExpanded);
       }
     });
   });
