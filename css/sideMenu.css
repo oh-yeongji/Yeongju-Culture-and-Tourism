@@ -84,6 +84,16 @@
   background: #bbc6b2;
 }
 
+.sideMenu .sideBody > li > ul.show li > ul > li::before {
+  content: "";
+  position: absolute;
+  /* display: none; */
+  width: 5px;
+  height: 1px;
+  background: #c7c7c7;
+  border-radius: 40px;
+}
+
 @keyframes fadeLeft {
   from {
     transform: translateX(250px);
