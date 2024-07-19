@@ -4,7 +4,7 @@ window.onload = function () {
   let sideMenuIcon = document.querySelector(".side-menu");
   let dim = document.querySelector(".dim");
   let sideMenuBigLi = document.querySelectorAll(".sideMenu .sideBody > li > a");
-  let sideMenuMediUl = document.querySelectorAll(
+  let sideMenuMediLl = document.querySelectorAll(
     ".sideMenu .sideBody > li > ul"
   );
 
@@ -30,7 +30,7 @@ window.onload = function () {
       let subMenu = this.nextElementSibling;
       if (subMenu) {
         let isExpanded = subMenu.classList.contains("show");
-        sideMenuMediUl.forEach(function (submenu) {
+        sideMenuMediLl.forEach(function (submenu) {
           submenu.classList.remove("show");
         });
         subMenu.classList.toggle("show", !isExpanded);
