@@ -8,6 +8,10 @@ window.onload = function () {
     ".sideMenu .sideBody > li > ul"
   );
 
+  let sideMenuSmalLl = document.querySelectorAll(
+    ".sideMenu .sideBody > li > ul > li > ul"
+  );
+
   sideMenuIcon.addEventListener("click", function () {
     sideMenu.classList.toggle("show");
     dim.style.display = sideMenu.classList.contains("show") ? "block" : "none";
@@ -35,6 +39,24 @@ window.onload = function () {
         });
         subMenu.classList.toggle("show", !isExpanded);
       }
+    });
+  });
+
+  sideMenuMediLl.forEach(function (menu) {
+    let subMenuItems = menu.querySelectorAll("li > a");
+    subMenuItems.forEach(function (subMenuItem) {
+      subMenuItem.addEventListener("click", function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        let subMenu = this.nextElementSibling;
+        if (subMenu) {
+          let isExpanded = subMenu.classList.contains("show");
+          sideMenuSmalLl.forEach(function (submenu) {
+            submenu.classList.remove("show");
+          });
+          subMenu.classList.toggle("show", !isExpanded);
+        }
+      });
     });
   });
 };
