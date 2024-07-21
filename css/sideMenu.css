@@ -58,7 +58,7 @@
 .sideMenu .sideBody > li > ul {
   height: 0;
   overflow: hidden;
-  transition: height 0.85s ease forwards;
+  /* transition: height 0.85s ease forwards; */
 }
 
 .sideMenu .sideBody > li > ul.show {
@@ -87,24 +87,21 @@
 .sideMenu .sideBody > li > ul.show li > ul {
   height: 0;
   overflow: hidden;
-  transition: height 0.85s ease forwards;
+  /* transition: height 0.85s ease forwards; */
 }
 
 .sideMenu .sideBody > li > ul.show li > ul.show {
   height: auto;
 }
 
-.sideMenu .sideBody > li > ul.show > ul.show > li > a {
-  display: block;
-  position: relative;
-  padding: 5px 23px 5px 50px;
-  background: #fff;
+.sideMenu .sideBody > li > ul.show li > ul.show li a {
+  background: #fff; /* 배경을 흰색으로 설정 */
+  border-bottom: none; /* border-bottom 제거 */
 }
 
-.sideMenu .sideBody > li > ul.show li > ul > li::before {
+.sideMenu .sideBody > li > ul.show li > ul.show li::before {
   content: "";
   position: absolute;
-  display: none;
   width: 5px;
   height: 1px;
   background: #c7c7c7;

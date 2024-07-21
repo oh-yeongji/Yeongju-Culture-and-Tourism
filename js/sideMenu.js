@@ -55,6 +55,18 @@ window.onload = function () {
             submenu.classList.remove("show");
           });
           subMenu.classList.toggle("show", !isExpanded);
+          // 배경색과 border-bottom을 설정
+          if (isExpanded) {
+            subMenu.querySelectorAll("li > a").forEach(function (a) {
+              a.style.background = "#fff";
+              a.style.borderBottom = "none";
+            });
+          } else {
+            subMenu.querySelectorAll("li > a").forEach(function (a) {
+              a.style.background = "";
+              a.style.borderBottom = "";
+            });
+          }
         }
       });
     });
