@@ -56,6 +56,11 @@
   border-bottom: 1px solid #dde7d5;
 }
 
+.sideMenu .sideBody > li > a:hover {
+  color: #000;
+  font-weight: 700;
+}
+
 .sideMenu .sideBody > li > ul {
   height: 0;
   overflow: hidden;
@@ -94,7 +99,6 @@
 
 .sideMenu .sideBody > li > ul.show li a:hover::before {
   background: #000;
-  font-weight: 700;
 }
 
 .sideMenu .sideBody > li > ul.show li > ul {
