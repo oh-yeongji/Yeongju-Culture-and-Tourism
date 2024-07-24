@@ -93,6 +93,23 @@
   border-bottom: 1px solid #dde7d5;
 }
 
+.sideMenu
+  .sideBody
+  > li
+  > ul.show
+  li:nth-of-type(n + 2):nth-of-type(-n + 5)
+  > a::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  margin-top: 9px;
+  right: 15px;
+  border-top: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  transform: rotate(45deg);
+}
+
 .sideMenu .sideBody > li > ul.show li a:hover {
   color: #000;
   font-weight: 700;
