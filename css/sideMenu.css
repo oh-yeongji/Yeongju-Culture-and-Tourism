@@ -96,7 +96,7 @@
 .sideMenu
   .sideBody
   > li
-  > ul.show
+  > .firstList.show
   li:nth-of-type(n + 2):nth-of-type(-n + 5)
   > a::after {
   content: "";
