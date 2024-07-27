@@ -213,6 +213,11 @@
   border-radius: 40px;
 }
 
+.sideMenu .sideBody > li > ul.show li > ul.show li a::after {
+  content: "";
+  display: none;
+}
+
 @keyframes fadeLeft {
   from {
     transform: translateX(250px);
