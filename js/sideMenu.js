@@ -36,8 +36,10 @@ window.onload = function () {
         let isExpanded = subMenu.classList.contains("show");
         sideMenuMediLl.forEach(function (submenu) {
           submenu.classList.remove("show");
+          submenu.previousElementSibling.style.fontWeight = "300"; // font-weight를 300으로 변경
         });
         subMenu.classList.toggle("show", !isExpanded);
+        this.style.fontWeight = isExpanded ? "700" : "300"; // 클릭한 항목의 font-weight를 700으로 변경
       }
     });
   });
@@ -48,6 +50,7 @@ window.onload = function () {
       subMenuItem.addEventListener("click", function (event) {
         event.preventDefault();
         event.stopPropagation();
+
         let subMenu = this.nextElementSibling;
         if (subMenu) {
           let isExpanded = subMenu.classList.contains("show");
@@ -55,16 +58,11 @@ window.onload = function () {
             submenu.classList.remove("show");
           });
           subMenu.classList.toggle("show", !isExpanded);
-          // 배경색과 border-bottom을 설정
+
           if (isExpanded) {
-            subMenu.querySelectorAll("li > a").forEach(function (a) {
-              a.style.background = "#fff";
-              a.style.borderBottom = "none";
-            });
-          } else {
-            subMenu.querySelectorAll("li > a").forEach(function (a) {
-              a.style.background = "";
-              a.style.borderBottom = "";
+            subMenu.querySelectorAll("li > a").forEach(function (e) {
+              e.style.background = "#fff";
+              e.style.borderBottom = "none";
             });
           }
         }
