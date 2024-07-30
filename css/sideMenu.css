@@ -73,6 +73,18 @@
   font-weight: 700;
 }
 
+.sideMenu .sideBody > li > a:hover::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  margin-top: 9px;
+  right: 15px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  transform: rotate(45deg);
+}
+
 .sideMenu .sideBody > li > ul {
   height: 0;
   overflow: hidden;
