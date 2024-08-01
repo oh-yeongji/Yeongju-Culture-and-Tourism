@@ -105,6 +105,7 @@
   border-bottom: 1px solid #dde7d5;
 }
 
+/* first mediLi */
 .sideMenu
   .sideBody
   > li
@@ -122,6 +123,7 @@
   transform: rotate(45deg);
 }
 
+/* second mediLi */
 .sideMenu .sideBody > li > .secondList.show li:nth-of-type(1) > a::after,
 .sideMenu .sideBody > li > .secondList.show li:nth-of-type(2) > a::after,
 .sideMenu .sideBody > li > .secondList.show li:nth-of-type(4) > a::after {
@@ -136,6 +138,7 @@
   transform: rotate(45deg);
 }
 
+/* third mediLi */
 .sideMenu .sideBody > li > .thirdList.show li:nth-of-type(-n + 7) > a::after {
   content: "";
   position: absolute;
@@ -148,6 +151,7 @@
   transform: rotate(45deg);
 }
 
+/* four mediLi */
 .sideMenu .sideBody > li > .fourList.show li a::after {
   content: "";
   position: absolute;
@@ -160,6 +164,7 @@
   transform: rotate(45deg);
 }
 
+/* five mediLi */
 .sideMenu .sideBody > li > .fiveList.show li:nth-of-type(2) > a::after,
 .sideMenu .sideBody > li > .fiveList.show li:nth-of-type(3) > a::after {
   content: "";
@@ -193,7 +198,12 @@
   background: #000;
 }
 
-.sideMenu .sideBody > li > ul.show li a:hover::after {
+.sideMenu
+  .sideBody
+  > li
+  > .firstList.show
+  li:nth-of-type(n + 2):nth-of-type(-n + 5)
+  > a:hover::after {
   content: "";
   position: absolute;
   width: 7px;
@@ -202,6 +212,64 @@
   right: 15px;
   border-top: 2px solid #000;
   border-right: 2px solid #000;
+  transform: rotate(45deg);
+}
+
+.sideMenu .sideBody > li > .secondList.show li:nth-of-type(1) > a:hover::after,
+.sideMenu .sideBody > li > .secondList.show li:nth-of-type(2) > a:hover::after,
+.sideMenu .sideBody > li > .secondList.show li:nth-of-type(4) > a:hover::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  margin-top: 9px;
+  right: 15px;
+  border-top: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  transform: rotate(45deg);
+}
+
+.sideMenu
+  .sideBody
+  > li
+  > .thirdList.show
+  li:nth-of-type(-n + 7)
+  > a:hover::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  margin-top: 9px;
+  right: 15px;
+  border-top: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  transform: rotate(45deg);
+}
+
+/* four mediLi */
+.sideMenu .sideBody > li > .fourList.show li > a:hover::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  margin-top: 9px;
+  right: 15px;
+  border-top: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  transform: rotate(45deg);
+}
+
+/* five mediLi */
+.sideMenu .sideBody > li > .fiveList.show li:nth-of-type(2) > a:hover::after,
+.sideMenu .sideBody > li > .fiveList.show li:nth-of-type(3) > a:hover::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  margin-top: 9px;
+  right: 15px;
+  border-top: 2px solid #ccc;
+  border-right: 2px solid #ccc;
   transform: rotate(45deg);
 }
 
