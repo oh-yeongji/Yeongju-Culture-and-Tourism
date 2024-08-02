@@ -88,7 +88,6 @@
 .sideMenu .sideBody > li > ul {
   height: 0;
   overflow: hidden;
-  /* transition: height 0.85s ease forwards; */
 }
 
 .sideMenu .sideBody > li > ul.show {
