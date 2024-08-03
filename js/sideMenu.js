@@ -3,61 +3,44 @@ window.onload = function () {
   let closeX = document.querySelector(".closeX > i");
   let sideMenuIcon = document.querySelector(".side-menu");
   let dim = document.querySelector(".dim");
-  let sideMenuBigLi = document.querySelectorAll(".sideMenu .sideBody > li > a");
-  let sideMenuMediLl = document.querySelectorAll(
-    ".sideMenu .sideBody > li > ul"
-  );
-  let sideMenuSmalLl = document.querySelectorAll(
-    ".sideMenu .sideBody > li > ul > li > ul"
-  );
+  let sideBody = document.querySelector(".sideMenu .sideBody");
+
   sideMenuIcon.addEventListener("click", function () {
     sideMenu.classList.toggle("show");
     dim.style.display = sideMenu.classList.contains("show") ? "block" : "none";
   });
+
   closeX.addEventListener("click", function () {
     sideMenu.classList.remove("show");
     dim.style.display = "none";
   });
+
   dim.addEventListener("click", function () {
     sideMenu.classList.remove("show");
     dim.style.display = "none";
   });
 
-  sideMenuBigLi.forEach(function (menu) {
-    menu.addEventListener("click", function (event) {
+  sideBody.addEventListener("click", function (event) {
+    if (event.target.tagName === "A") {
       event.preventDefault();
       event.stopPropagation();
-      let subMenu = this.nextElementSibling;
+      let subMenu = event.target.nextElementSibling;
       if (subMenu) {
         let isExpanded = subMenu.classList.contains("show");
-        sideMenuMediLl.forEach(function (submenu) {
-          submenu.classList.remove("show");
-        });
-        subMenu.classList.toggle("show", !isExpanded);
-      }
-    });
-  });
 
-  sideMenuMediLl.forEach(function (menu) {
-    menu.addEventListener("click", function (event) {
-      event.preventDefault();
-      event.stopPropagation();
-      let subMenu = this.nextElementSibling;
-
-      if (subMenu) {
-        let isExpanded = subMenu.classList.contains("show");
-        sideMenuSmalLl.forEach(function (submenu) {
-          submenu.classList.remove("show");
-        });
-        subMenu.classList.toggle("show", !isExpanded);
-
-        if (isExpanded) {
-          subMenu.querySelectorAll("li > a").forEach(function (a) {
-            a.style.background = "#fff";
-            a.style.borderBottom = "none";
+        if (subMenu.tagName === "UL") {
+          let parentUl = subMenu.parentElement.parentElement;
+          parentUl.querySelectorAll("ul").forEach(function (submenu) {
+            submenu.classList.remove("show");
+          });
+        } else {
+          sideBody.querySelectorAll("ul").forEach(function (submenu) {
+            submenu.classList.remove("show");
           });
         }
+
+        subMenu.classList.toggle("show", !isExpanded);
       }
-    });
+    }
   });
 };
