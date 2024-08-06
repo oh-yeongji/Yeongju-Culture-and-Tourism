@@ -104,6 +104,10 @@
   border-bottom: 1px solid #dde7d5;
 }
 
+.sideMenu a.bold {
+  font-weight: bold;
+}
+
 /* first mediLi */
 .sideMenu
   .sideBody

@@ -41,6 +41,12 @@ window.onload = function () {
 
         subMenu.classList.toggle("show", !isExpanded);
       }
+
+      if (event.target.classList.contains("bold")) {
+        event.target.classList.remove("bold");
+      } else {
+        event.target.classList.add("bold");
+      }
     }
   });
 };
