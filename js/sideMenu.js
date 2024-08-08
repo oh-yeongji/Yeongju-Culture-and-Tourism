@@ -47,6 +47,27 @@ window.onload = function () {
       } else {
         event.target.classList.add("bold");
       }
+
+      // 클릭 시 after와 before 스타일 변경
+      let computedStyle = window.getComputedStyle(event.target, "::after");
+      let afterContent = computedStyle.getPropertyValue("content");
+
+      // 기존 after 스타일을 검은색(#000)으로 변경
+      if (afterContent) {
+        event.target.style.setProperty("--after-color", "#000");
+        event.target.style.setProperty("--after-border", "2px solid #000");
+      }
+
+      let computedBeforeStyle = window.getComputedStyle(
+        event.target,
+        "::before"
+      );
+      let beforeContent = computedBeforeStyle.getPropertyValue("content");
+
+      // 기존 before 스타일을 검은색(#000)으로 변경
+      if (beforeContent) {
+        event.target.style.setProperty("--before-color", "#000");
+      }
     }
   });
 };

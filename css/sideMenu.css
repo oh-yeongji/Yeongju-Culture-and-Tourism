@@ -108,6 +108,29 @@
   font-weight: bold;
 }
 
+.sideMenu .sideBody > li > a::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  margin-top: 9px;
+  right: 15px;
+  border-top: var(--after-border, 2px solid #ccc);
+  border-right: var(--after-border, 2px solid #ccc);
+  transform: rotate(45deg);
+}
+
+.sideMenu .sideBody > li > ul.show li a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 35px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--before-color, #bbc6b2);
+}
+
 /* first mediLi */
 .sideMenu
   .sideBody
