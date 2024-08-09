@@ -120,17 +120,6 @@
   transform: rotate(45deg);
 }
 
-.sideMenu .sideBody > li > ul.show li a::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 35px;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background: var(--before-color, #bbc6b2);
-}
-
 /* first mediLi */
 .sideMenu
   .sideBody
@@ -217,7 +206,11 @@
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #bbc6b2;
+  background: var(--before-color, #bbc6b2);
+}
+
+.clicked::before {
+  background: #000; 
 }
 
 .sideMenu .sideBody > li > ul.show li a:hover::before {
