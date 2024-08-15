@@ -85,6 +85,10 @@
   transform: rotate(45deg);
 }
 
+.sideMenu .sideBody > li > a.clicked::after {
+  border-color: #000;
+}
+
 .sideMenu .sideBody > li > ul {
   height: 0;
   overflow: hidden;
@@ -207,10 +211,6 @@
   height: 4px;
   border-radius: 50%;
   background: var(--before-color, #bbc6b2);
-}
-
-.clicked::before {
-  background: #000; 
 }
 
 .sideMenu .sideBody > li > ul.show li a:hover::before {
