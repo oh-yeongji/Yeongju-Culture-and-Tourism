@@ -217,6 +217,10 @@
   background: #000;
 }
 
+.sideMenu .sideBody > li > ul.show li a.clicked::before {
+  background: #000;
+}
+
 .sideMenu
   .sideBody
   > li
