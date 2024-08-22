@@ -42,17 +42,17 @@ window.onload = function () {
         subMenu.classList.toggle("show", !isExpanded);
       }
 
-      if (event.target.classList.contains("bold")) {
-        event.target.classList.remove("bold");
-      } else {
-        event.target.classList.add("bold");
-      }
+      // 기존에 clicked와 bold 클래스를 가진 요소들에서 클래스 제거
+      sideBody
+        .querySelectorAll("a.clicked, a.bold")
+        .forEach(function (element) {
+          element.classList.remove("clicked");
+          element.classList.remove("bold");
+        });
 
-      if (event.target.classList.contains("clicked")) {
-        event.target.classList.remove("clicked");
-      } else {
-        event.target.classList.add("clicked");
-      }
+      // 현재 클릭된 요소에 clicked와 bold 클래스 추가
+      event.target.classList.add("clicked");
+      event.target.classList.add("bold");
     }
   });
 };
