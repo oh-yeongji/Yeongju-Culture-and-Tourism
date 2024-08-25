@@ -401,3 +401,22 @@
     transform: translateX(0);
   }
 }
+
+/* sideMenu 반응형 */
+@media (min-width: 500px) and (max-width: 1024px) {
+  .sideMenu {
+    display: block;
+  }
+  .dim {
+    display: block;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1536px) {
+  .sideMenu {
+    display: none;
+  }
+  .dim {
+    display: none;
+  }
+}

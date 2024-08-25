@@ -5,14 +5,26 @@ window.onload = function () {
   let dim = document.querySelector(".dim");
   let sideBody = document.querySelector(".sideMenu .sideBody");
 
+  function updateDimVisibility() {
+    // 현재 화면 너비 확인
+    let screenWidth = window.innerWidth;
+    if (screenWidth >= 1025 && screenWidth <= 1536) {
+      dim.style.display = "none";
+    } else {
+      dim.style.display = sideMenu.classList.contains("show")
+        ? "block"
+        : "none";
+    }
+  }
+
   sideMenuIcon.addEventListener("click", function () {
     sideMenu.classList.toggle("show");
-    dim.style.display = sideMenu.classList.contains("show") ? "block" : "none";
+    updateDimVisibility(); // 클릭 시 dim 표시 여부 업데이트
   });
 
   closeX.addEventListener("click", function () {
     sideMenu.classList.remove("show");
-    dim.style.display = "none";
+    updateDimVisibility(); // 닫기 시 dim 표시 여부 업데이트
   });
 
   dim.addEventListener("click", function () {
@@ -55,4 +67,9 @@ window.onload = function () {
       event.target.classList.add("bold");
     }
   });
+
+  // 초기 로딩 시 dim 표시 여부 설정
+  updateDimVisibility();
+  // 윈도우 리사이즈 시 dim 표시 여부 업데이트
+  window.addEventListener("resize", updateDimVisibility);
 };
