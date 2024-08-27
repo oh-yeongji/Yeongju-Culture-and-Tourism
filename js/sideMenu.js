@@ -52,23 +52,22 @@ window.onload = function () {
       }
 
       // 기존에 clicked와 bold 클래스를 가진 요소들에서 클래스 제거
-      sideBody
-        .querySelectorAll("a.clicked, a.bold")
-        .forEach(function (element) {
-          if (!element.contains(target)) {
-            element.classList.remove("clicked");
-            element.classList.remove("bold");
-          }
-        });
+      sideBody.querySelectorAll("a.clicked").forEach(function (element) {
+        if (
+          !element.contains(target) &&
+          !target.closest("ul").contains(element)
+        ) {
+          element.classList.remove("clicked");
+        }
+      });
 
-      // 현재 클릭된 요소에 clicked와 bold 클래스 추가
+      // 현재 클릭된 요소에 clicked 클래스 추가
       target.classList.add("clicked");
-      target.classList.add("bold");
 
-      // 상위 a 태그들에도 bold를 추가하여 유지
+      // 상위 a 태그들에도 clicked 클래스를 추가하여 유지
       let parentA = target.closest("ul").parentElement.querySelector("a");
       if (parentA) {
-        parentA.classList.add("bold");
+        parentA.classList.add("clicked");
       }
     }
   });
