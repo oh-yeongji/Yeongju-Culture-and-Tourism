@@ -6,7 +6,6 @@ window.onload = function () {
   let sideBody = document.querySelector(".sideMenu .sideBody");
 
   function updateDimVisibility() {
-    // 현재 화면 너비 확인
     let screenWidth = window.innerWidth;
     if (screenWidth >= 1025 && screenWidth <= 1536) {
       dim.style.display = "none";
@@ -19,12 +18,12 @@ window.onload = function () {
 
   sideMenuIcon.addEventListener("click", function () {
     sideMenu.classList.toggle("show");
-    updateDimVisibility(); // 클릭 시 dim 표시 여부 업데이트
+    updateDimVisibility();
   });
 
   closeX.addEventListener("click", function () {
     sideMenu.classList.remove("show");
-    updateDimVisibility(); // 닫기 시 dim 표시 여부 업데이트
+    updateDimVisibility();
   });
 
   dim.addEventListener("click", function () {
@@ -33,23 +32,21 @@ window.onload = function () {
   });
 
   sideBody.addEventListener("click", function (event) {
-    if (event.target.tagName === "A") {
+    let target = event.target;
+
+    if (target.tagName === "A") {
       event.preventDefault();
       event.stopPropagation();
-      let subMenu = event.target.nextElementSibling;
-      if (subMenu) {
+
+      let subMenu = target.nextElementSibling;
+
+      if (subMenu && subMenu.tagName === "UL") {
         let isExpanded = subMenu.classList.contains("show");
 
-        if (subMenu.tagName === "UL") {
-          let parentUl = subMenu.parentElement.parentElement;
-          parentUl.querySelectorAll("ul").forEach(function (submenu) {
-            submenu.classList.remove("show");
-          });
-        } else {
-          sideBody.querySelectorAll("ul").forEach(function (submenu) {
-            submenu.classList.remove("show");
-          });
-        }
+        let parentUl = subMenu.parentElement.parentElement;
+        parentUl.querySelectorAll("ul").forEach(function (submenu) {
+          submenu.classList.remove("show");
+        });
 
         subMenu.classList.toggle("show", !isExpanded);
       }
@@ -58,18 +55,31 @@ window.onload = function () {
       sideBody
         .querySelectorAll("a.clicked, a.bold")
         .forEach(function (element) {
-          element.classList.remove("clicked");
-          element.classList.remove("bold");
+          if (!element.contains(target)) {
+            element.classList.remove("clicked");
+            element.classList.remove("bold");
+          }
         });
 
       // 현재 클릭된 요소에 clicked와 bold 클래스 추가
-      event.target.classList.add("clicked");
-      event.target.classList.add("bold");
+      target.classList.add("clicked");
+      target.classList.add("bold");
+
+      // 상위 a 태그들에도 bold를 추가하여 유지
+      let parentA = target.closest("ul").parentElement.querySelector("a");
+      if (parentA) {
+        parentA.classList.add("bold");
+      }
     }
   });
 
-  // 초기 로딩 시 dim 표시 여부 설정
+  // 자식 요소 클릭 이벤트 처리 (자식 요소에 대해서는 부모의 스타일 변경 방지)
+  sideBody.querySelectorAll("a *").forEach(function (element) {
+    element.addEventListener("click", function (event) {
+      event.stopPropagation();
+    });
+  });
+
   updateDimVisibility();
-  // 윈도우 리사이즈 시 dim 표시 여부 업데이트
   window.addEventListener("resize", updateDimVisibility);
 };
