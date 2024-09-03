@@ -12,6 +12,7 @@
 }
 
 .sideMenu {
+  display: none;
   overflow-x: hidden;
   overflow-y: hidden;
   position: relative;
