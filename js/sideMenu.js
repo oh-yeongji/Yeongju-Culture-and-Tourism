@@ -38,8 +38,28 @@ window.onload = function () {
       event.preventDefault();
       event.stopPropagation();
 
-      let subMenu = target.nextElementSibling;
+      // 이미 clicked 상태인 경우 clicked 클래스 제거 후 리턴
+      if (target.classList.contains("clicked")) {
+        target.classList.remove("clicked");
+        return;
+      }
 
+      // 기존에 clicked 클래스를 가진 모든 요소에서 클래스 제거
+      sideBody.querySelectorAll("a.clicked").forEach(function (element) {
+        element.classList.remove("clicked");
+      });
+
+      // 현재 클릭된 요소에 clicked 클래스 추가
+      target.classList.add("clicked");
+
+      // 상위 a 태그에도 clicked 클래스를 추가하여 유지
+      let parentA = target.closest("ul").parentElement.querySelector("a");
+      if (parentA) {
+        parentA.classList.add("clicked");
+      }
+
+      // 서브메뉴의 표시 상태를 토글
+      let subMenu = target.nextElementSibling;
       if (subMenu && subMenu.tagName === "UL") {
         let isExpanded = subMenu.classList.contains("show");
 
@@ -49,25 +69,6 @@ window.onload = function () {
         });
 
         subMenu.classList.toggle("show", !isExpanded);
-      }
-
-      // 기존에 clicked와 bold 클래스를 가진 요소들에서 클래스 제거
-      sideBody.querySelectorAll("a.clicked").forEach(function (element) {
-        if (
-          !element.contains(target) &&
-          !target.closest("ul").contains(element)
-        ) {
-          element.classList.remove("clicked");
-        }
-      });
-
-      // 현재 클릭된 요소에 clicked 클래스 추가
-      target.classList.add("clicked");
-
-      // 상위 a 태그들에도 clicked 클래스를 추가하여 유지
-      let parentA = target.closest("ul").parentElement.querySelector("a");
-      if (parentA) {
-        parentA.classList.add("clicked");
       }
     }
   });
