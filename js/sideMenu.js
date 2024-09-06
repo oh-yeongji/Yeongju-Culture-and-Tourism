@@ -13,13 +13,17 @@ window.onload = function () {
     if (screenWidth >= 1025 && screenWidth <= 1536) {
       dim.style.display = "none";
     } else {
-      dim.style.display = sideMenu.classList.contains("show") ? "block" : "none";
+      dim.style.display = sideMenu.classList.contains("show")
+        ? "block"
+        : "none";
     }
   }
 
   sideMenuIcon.addEventListener("click", function () {
     sideMenu.classList.toggle("show");
-    sideMenu.style.display = sideMenu.classList.contains("show") ? "block" : "none";
+    sideMenu.style.display = sideMenu.classList.contains("show")
+      ? "block"
+      : "none";
     updateDimVisibility();
   });
 
@@ -44,6 +48,10 @@ window.onload = function () {
 
       if (target.classList.contains("clicked")) {
         target.classList.remove("clicked");
+        let subMenu = target.nextElementSibling;
+        if (subMenu && subMenu.tagName === "UL") {
+          subMenu.classList.remove("show");
+        }
         return;
       }
 
