@@ -55,15 +55,19 @@ window.onload = function () {
         return;
       }
 
+      // 모든 링크의 "clicked" 클래스 제거
       sideBody.querySelectorAll("a.clicked").forEach(function (element) {
         element.classList.remove("clicked");
       });
 
       target.classList.add("clicked");
 
-      let parentA = target.closest("ul").parentElement.querySelector("a");
-      if (parentA) {
-        parentA.classList.add("clicked");
+      // 상위 메뉴의 "clicked" 클래스 업데이트 방지
+      let parentUl = target.closest("ul").parentElement.closest("ul");
+      if (parentUl) {
+        parentUl.querySelectorAll("a").forEach(function (element) {
+          element.classList.remove("clicked");
+        });
       }
 
       let subMenu = target.nextElementSibling;
