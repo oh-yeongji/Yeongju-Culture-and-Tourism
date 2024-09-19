@@ -4,10 +4,8 @@ window.onload = function () {
   let sideMenuIcon = document.querySelector(".side-menu");
   let dim = document.querySelector(".dim");
   let sideBody = document.querySelector(".sideMenu .sideBody");
-
   // 초기 상태에서 sideMenu를 숨깁니다.
   sideMenu.style.display = "none";
-
   function updateDimVisibility() {
     let screenWidth = window.innerWidth;
     if (screenWidth >= 1025 && screenWidth <= 1536) {
@@ -18,7 +16,6 @@ window.onload = function () {
         : "none";
     }
   }
-
   sideMenuIcon.addEventListener("click", function () {
     sideMenu.classList.toggle("show");
     sideMenu.style.display = sideMenu.classList.contains("show")
@@ -26,26 +23,21 @@ window.onload = function () {
       : "none";
     updateDimVisibility();
   });
-
   closeX.addEventListener("click", function () {
     sideMenu.classList.remove("show");
     sideMenu.style.display = "none";
     updateDimVisibility();
   });
-
   dim.addEventListener("click", function () {
     sideMenu.classList.remove("show");
     sideMenu.style.display = "none";
     dim.style.display = "none";
   });
-
   sideBody.addEventListener("click", function (event) {
     let target = event.target;
-
     if (target.tagName === "A") {
       event.preventDefault();
       event.stopPropagation();
-
       if (target.classList.contains("clicked")) {
         target.classList.remove("clicked");
         let subMenu = target.nextElementSibling;
@@ -55,41 +47,33 @@ window.onload = function () {
         return;
       }
 
-      // 모든 링크의 "clicked" 클래스 제거
       sideBody.querySelectorAll("a.clicked").forEach(function (element) {
         element.classList.remove("clicked");
       });
 
       target.classList.add("clicked");
 
-      // 상위 메뉴의 "clicked" 클래스 업데이트 방지
-      let parentUl = target.closest("ul").parentElement.closest("ul");
-      if (parentUl) {
-        parentUl.querySelectorAll("a").forEach(function (element) {
-          element.classList.remove("clicked");
-        });
+      let parentA = target.closest("ul").parentElement.querySelector("a");
+      if (parentA) {
+        parentA.classList.add("clicked");
       }
 
       let subMenu = target.nextElementSibling;
       if (subMenu && subMenu.tagName === "UL") {
         let isExpanded = subMenu.classList.contains("show");
-
         let parentUl = subMenu.parentElement.parentElement;
         parentUl.querySelectorAll("ul").forEach(function (submenu) {
           submenu.classList.remove("show");
         });
-
         subMenu.classList.toggle("show", !isExpanded);
       }
     }
   });
-
   sideBody.querySelectorAll("a *").forEach(function (element) {
     element.addEventListener("click", function (event) {
       event.stopPropagation();
     });
   });
-
   updateDimVisibility();
   window.addEventListener("resize", updateDimVisibility);
 };
